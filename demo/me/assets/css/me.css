@@ -1,0 +1,356 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700,800');*/
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    height: 100%;
+    color: #ffffff;
+    background-color: #0f0c29;
+}
+
+.height {
+    height: 200px !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.menu-col {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    border-style: solid;
+    border-width: 0 2px 0 0;
+    -webkit-border-image: -webkit-linear-gradient (
+        top,
+        rgba(15,12,41,1) 1%,
+        rgba(255,255,255,1) 50%,
+        rgba(15,12,41,1) 100% 
+    ) 1 100%;
+    -moz-border-image: -moz-linear-gradient(
+        top,
+        rgba(15,12,41,1) 1%,
+        rgba(255,255,255,1) 50%,
+        rgba(15,12,41,1) 100%
+    ) 1 100%;
+    -o-border-image: -o-linear-gradient(
+        top,
+        rgba(15,12,41,1) 1%,
+        rgba(255,255,255,1) 50%,
+        rgba(15,12,41,1) 100%
+    ) 1 100%;
+    border-image: linear-gradient(
+        to top,
+        rgba(15,12,41,1) 1%,
+        rgba(255,255,255,1) 50%,
+        rgba(15,12,41,1) 100%
+    ) 1 100%;
+}
+
+.logo {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.logo a {
+    color: #FFFFFF;
+    font-weight: 900;
+    color: #FFFFFF;
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.mobile-icon {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1.4em;
+}
+
+.mobile-icon svg {
+    height: 25px;
+    width: 25px;
+}
+
+.menu {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.menu ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding-top: 1em;
+
+}
+
+.menu ul li a {
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+        to right,
+        #d7a150,
+        #d7a150 50%,
+        #ffffff 50% );
+        background-size: 200% 100%;
+        background-position: 100%;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    background-position: 0%;
+}
+
+/* ================================================================ */
+
+.main {
+    min-height: 100%;
+    padding-left: 250px;
+    padding-top: 55px;
+}
+
+.post-area-head h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.post-area-posts {
+    display: flex;
+    margin-bottom: 30px;
+    flex-flow: wrap;
+    padding-right: 45px;
+}
+
+.post {
+    width: 180px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+.post:last-child {
+    margin-right: 0;
+}
+
+.post img {
+    position: absolute;
+    left: -50%;
+    bottom: 0;
+    display: none;
+}
+
+.post span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #FFFFFF;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: .9em;
+    font-weight: 300;
+    height: 100px;
+    transition: .3s linear;
+}
+
+.post span p {
+    display: none;
+    opacity: 0;
+    padding: 1em;
+}
+
+.post span h2 {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.post span h5 {
+    font-size: 1em;
+    font-size: 400;
+}
+
+.post:hover span {
+    transition: .3s linear;
+    height: 100%;
+}
+
+.post:hover span p {
+    display: block;
+    opacity: 1;
+}
+
+/* ================================== */
+
+footer {
+    padding-left: 250px;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* ================================== */
+
+.single {
+    padding-left: 250px;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.single-area {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: #333333;
+    padding: 15px;
+}
+
+.single-area h1 {
+    font-size: 2.1em;
+    font-weight: 800;
+}
+
+.single-area h2 {
+    font-size: 1.9em;
+    font-weight: 700
+}
+
+.single-area h3 {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.single-area h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.single-area h5 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.single-area img {
+    width: 100%;
+    height: auto;
+    margin-top: .5em;
+}
+
+.single-area p {
+    font-size: 500;
+}
+
+/* =========================================== */
+
+.page {
+    padding-top: 50px;
+    padding-left: 250px;
+}
+
+.page-area {
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    color: #000000;
+}
+
+.icon-part {
+    display: flex;
+}
+
+.page svg {
+    height: 30px;
+    width: 30px;
+    opacity: .5;
+    transition: .3s linear;
+}
+
+.page svg:hover {
+    opacity: 1;
+}
+
+.icon-p {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-col {
+        width: 100%;
+        height: 60px;
+        border-style: solid;
+        border-width: 0 0 2px 0;
+        -webkit-border-image: -webkit-linear-gradient ( right, rgba(15,12,41,1) 1%, rgba(255,255,255,1) 50%, rgba(15,12,41,1) 100% ) 1 1 100%;
+        -moz-border-image: -moz-linear-gradient( right, rgba(15,12,41,1) 1%, rgba(255,255,255,1) 50%, rgba(15,12,41,1) 100% ) 1 1 100%;
+        -o-border-image: -o-linear-gradient( right, rgba(15,12,41,1) 1%, rgba(255,255,255,1) 50%, rgba(15,12,41,1) 100% ) 1 1 100%;
+        border-image: linear-gradient( to right, rgba(15,12,41,1) 1%, rgba(255,255,255,1) 50%, rgba(15,12,41,1) 100% ) 1 1 100%;
+        z-index: 2;
+        background-color: #0f0c29;
+        transition: .3s linear;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: block;
+        z-index: 1;
+    }
+
+    .main {
+        padding-left: 0px;
+        padding-top: 75px;
+    }
+
+    .post-area-head {
+        padding-left: 1em;
+    }
+
+    .post-area-posts {
+        padding-right: 0px;
+        justify-content: center;
+    }
+
+    .single {
+        padding-left: 15px;
+        padding-top: 70px;
+    }
+
+    .page {
+        padding-left: 15px;
+        padding-top: 70px;
+    }
+
+    footer {
+        padding-left: 0;
+    }
+}
