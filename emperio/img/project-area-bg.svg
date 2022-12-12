@@ -1,0 +1,34 @@
+<svg width="306" height="205" viewBox="0 0 306 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5" clip-path="url(#clip0_1_3755)">
+<path d="M280.054 76.9992L305.486 102.501V51.5078H254.633V102.501L280.054 76.9992Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M203.783 102.502V77L178.352 102.502H203.783Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M152.93 102.502H178.351L152.93 77V102.502Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M178.352 51.5078L203.783 76.9992V51.5078H178.352Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M152.93 51.5078V76.9992L178.351 51.5078H152.93Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M203.781 51.5078V102.501H254.634V51.5078H203.781ZM229.213 90.9522C221.528 90.9522 215.298 84.7052 215.298 76.9992C215.298 69.2932 221.528 63.0463 229.213 63.0463C236.898 63.0463 243.128 69.2932 243.128 76.9992C243.128 84.7052 236.898 90.9522 229.213 90.9522Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M229.347 26.0051L203.926 51.5068V0.513672H254.779V51.5068L229.347 26.0051Z" stroke="#00A887" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.511719 204.485L51.3649 153.492V204.485H0.511719Z" stroke="#00A887" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M102.221 204.486V178.984L76.7891 204.486H102.221Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M51.3672 204.486H76.7886L51.3672 178.984V204.486Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M76.7891 153.492L102.221 178.984V153.492H76.7891Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M51.3672 153.492V178.984L76.7886 153.492H51.3672Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M254.634 153.492V204.485H203.781C203.781 176.343 226.569 153.492 254.634 153.492Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M305.486 204.486V178.984L280.055 204.486H305.486Z" stroke="#00A887" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M254.633 204.486H280.054L254.633 178.984V204.486Z" stroke="#00A887" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M280.055 153.492L305.486 178.984V153.492H280.055Z" stroke="#00A887" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M254.633 153.492V178.984L280.054 153.492H254.633Z" stroke="#00A887" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M152.93 153.492V204.485H203.783V153.492H152.93ZM178.361 192.937C170.677 192.937 164.447 186.69 164.447 178.984C164.447 171.278 170.677 165.031 178.361 165.031C186.046 165.031 192.276 171.278 192.276 178.984C192.276 186.69 186.046 192.937 178.361 192.937Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M152.928 153.492H102.219V163.489H152.928V153.492Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M152.928 194.344H102.219V204.341H152.928V194.344Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M152.928 173.773H102.219V184.058H152.928V173.773Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M254.633 102.5H305.486V153.493C277.421 153.493 254.633 130.642 254.633 102.5V102.5Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M229.14 127.991L203.719 153.493H254.572V102.5H203.719L229.14 127.991Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M153.002 102.5H102.148V153.493H153.002V102.5Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M178.421 102.469H203.843V123.172H170.593V133.488H203.843V153.462H178.421C164.384 153.462 153 142.047 153 127.97C153 113.894 164.384 102.479 178.421 102.479V102.469Z" stroke="#C6C6C6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_1_3755">
+<rect width="306" height="205" fill="white"/>
+</clipPath>
+</defs>
+</svg>
