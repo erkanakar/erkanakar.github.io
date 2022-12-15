@@ -24,7 +24,7 @@
                     <img src="img/logo.svg" alt="EMPERIO">
                 </a>
             </div>
-            <div class="col-6 col-md-7 col-lg-7 col-xl-7 col-xxl-8">
+            <div class="col-6 d-none d-md-block col-md-7 col-lg-7 col-xl-7 col-xxl-8">
                 <div class="desktop-menu d-none d-lg-flex align-items-center">
                     <nav>
                         <ul>
@@ -35,7 +35,7 @@
                     </nav>
                 </div>
             </div>
-            <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-flex flex-row justify-content-end">
+            <div class="col-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-flex flex-row justify-content-end">
                 <div class="menu">
                     <div class="menu-item long"></div>
                     <div class="menu-item short"></div>
@@ -255,13 +255,15 @@
 </section>
 
 <section class="text-slide">
-    <div class="marquee">
-        <p>
-            <span>#NoContract    #RealResults    #RealPassion</span>
-        </p>
-        <p>
-            <span>#NoContract    #RealResults    #RealPassion</span>
-        </p>
+    <div class="text-slide-wrapper">
+        <div class="marquee">
+            <p>
+                <span>#NoContract    #RealResults    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion</span>
+            </p>
+            <p>
+                <span>#NoContract    #RealResults    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion    #RealPassion</span>
+            </p>
+        </div>
     </div>
 </section>
 
@@ -762,6 +764,13 @@
         element.addEventListener('mouseover', function () {
             var imgIndex = index + 3;
             var liElement = document.querySelector('.menu-modal-img-first li:nth-child(' + imgIndex + ')');
+            const listItems = document.querySelectorAll('.menu-modal-img-first li');
+
+            listItems.forEach(function (listItem) {
+                listItem.classList.remove('active-menu-img');
+            });
+
+            liElement.classList.toggle('active-menu-img');
             var liOffset = getOffset(liElement).top;
             var percent = calculatePercent(liOffset, menuImgContainer.offsetHeight);
 
@@ -773,7 +782,21 @@
 
             console.log('percent: ', percent)
         });
+
     });
+
+    const listItems = document.querySelectorAll('.menu-modal-menu > li');
+
+    listItems.forEach(function (listItem) {
+        listItem.addEventListener('mouseout', function () {
+            const listItems = document.querySelectorAll('.menu-modal-img-first li');
+
+            listItems.forEach(function (listItem) {
+                listItem.classList.remove('active-menu-img');
+            });
+        });
+    });
+
 
     const listElement = document.querySelector('.menu-modal-img-first li'); // li elementini seçin
     const imgElement = document.querySelector('.menu-modal-img-first img'); // img elementini seçin
@@ -796,6 +819,52 @@
         $('.has-child ul').not($(this).find('ul')).slideUp();
     });
 
+
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function (event) {
+        didScroll = true;
+    });
+
+    setInterval(function () {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        if (st > lastScrollTop && st > navbarHeight) {
+
+            $('header').removeClass('nav-down').addClass('nav-up');
+        } else {
+            if (st + $(window).height() < $(document).height()) {
+                if (window.scrollY === 0) {
+                    header.className = '';
+                } else {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+        }
+
+        lastScrollTop = st;
+    }
+
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY === 0) {
+            header.className = '';
+        }
+    });
 
 </script>
 
