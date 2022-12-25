@@ -708,7 +708,7 @@
                     Poststrasse 1, CH-8954 Geroldswil/ZH
                 </p>
             </div>
-            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column flex-wrap justify-content-center align-items-center order-1 order-md-3">
+            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column flex-wrap justify-content-center align-items-center d-lg-block order-1 order-md-3">
                 <ul class="social-media order-2 order-md-1">
                     <li>
                         <a href="#">
@@ -872,7 +872,8 @@
         } else {
             if (st + $(window).height() < $(document).height()) {
                 if (window.scrollY === 0) {
-                    header.className = '';
+                    header.classList.remove('nav-up');
+                    header.classList.remove('nav-down');
                 } else {
                     $('header').removeClass('nav-up').addClass('nav-down');
                 }
@@ -886,7 +887,8 @@
 
     window.addEventListener('scroll', function () {
         if (window.scrollY === 0) {
-            header.className = '';
+            header.classList.remove('nav-up');
+            header.classList.remove('nav-down');
         }
     });
 
