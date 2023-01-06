@@ -229,7 +229,7 @@
             <div class="form-row">
                 <div class="form-input">
                     <label for="text">Wo suchen Sie?</label>
-                    <input type="text" name="text" id="text" placeholder="Ortschaft eingeben...">
+                    <input type="text" name="text" id="text" placeholder="Ort, PLZ, Kanton...">
                 </div>
                 <div class="form-select">
                     <label for="select">Absicht</label>
@@ -934,6 +934,7 @@
             }
             const priceValue = addCommas(item.price);
             newContent.innerHTML = `
+                    <a href="kaufen-detail.html?id=${item.id}"></a>
                     <div class="project-slide-price">
                         CHF ${priceValue}
                     </div>

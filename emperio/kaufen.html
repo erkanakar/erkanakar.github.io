@@ -307,7 +307,7 @@
                     </div>
                     <div class="kaufen-mieten-list-box-content">
                         <div class="kaufen-mieten-list-box-content-title">
-                            9230 Flawil, <br />
+                            9230 Flawil, <br/>
                             St. Gallen
                         </div>
                         <div class="kaufen-mieten-list-box-content-desc">
@@ -357,7 +357,7 @@
                     </div>
                     <div class="kaufen-mieten-list-box-content">
                         <div class="kaufen-mieten-list-box-content-title">
-                            6014 Luzern, <br />
+                            6014 Luzern, <br/>
                             Luzern
                         </div>
                         <div class="kaufen-mieten-list-box-content-desc">
@@ -407,7 +407,7 @@
                     </div>
                     <div class="kaufen-mieten-list-box-content">
                         <div class="kaufen-mieten-list-box-content-title">
-                            5734 Reinach, <br />
+                            5734 Reinach, <br/>
                             Aargau
                         </div>
                         <div class="kaufen-mieten-list-box-content-desc">
@@ -649,7 +649,11 @@
         }
     }
 
-    function addDataToRow(data, type) {
+    function addDataToRow(data, type, speed) {
+        let speedValue = 'scroll';
+        if (speed) {
+            speedValue = speed;
+        }
         console.log('addDataToRow', type);
         const row = document.querySelector('.kaufen-mieten-list .row');
 
@@ -727,13 +731,21 @@
 
             const kaufenCol = document.querySelectorAll('.kaufen-col');
 
-            kaufenCol.forEach(item => {
-                window.addEventListener('scroll', function () {
+            if (speedValue == 'scroll') {
+                kaufenCol.forEach(item => {
+                    window.addEventListener('scroll', function () {
+                        if (isInViewport(item, 15)) {
+                            item.classList.add('kaufen-col-animate');
+                        }
+                    });
+                });
+            } else {
+                kaufenCol.forEach(item => {
                     if (isInViewport(item, 15)) {
                         item.classList.add('kaufen-col-animate');
                     }
                 });
-            });
+            }
         });
         hideLoadingSpinner(rows);
     }
@@ -760,7 +772,7 @@
             // Filtrelenen veriyi .row içine ekle
             document.querySelector('.kaufen-mieten-list .row').innerHTML = '';
             showLoadingSpinner(rows);
-            addDataToRow(filteredData, type);
+            addDataToRow(filteredData, type, 'fast');
         });
     });
 

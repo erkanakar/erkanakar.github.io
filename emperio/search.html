@@ -630,13 +630,22 @@
 
 
   const apiUrl = 'https://ofrime.com/server/properties/web2';
-
+  function toCapitalized(str) {
+    return str
+            .split(" ")
+            .map(function(word) {
+              return word.charAt(0).toUpperCase() + word.slice(1);
+            })
+            .join(" ");
+  }
 
 
   if (new URL(window.location.href).searchParams.has('text') || new URL(window.location.href).searchParams.has('select')) {
     // id get parametresini al
-    const text = new URL(window.location.href).searchParams.get('text');
+    let text = new URL(window.location.href).searchParams.get('text');
     const select = new URL(window.location.href).searchParams.get('select');
+    text = toCapitalized(text);
+    console.log(text);
     // Eğer storage'de veri yoksa veya yarım saat süresi dolduysa
     if (!localStorage.getItem('data') || (localStorage.getItem('timestamp') && Date.now() - localStorage.getItem('timestamp') > 1800000)) {
       // https://ofrime.com/server/properties/web2 adresine istek at
