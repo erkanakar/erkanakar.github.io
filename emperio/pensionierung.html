@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EMPERIO</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+
+<header class="sub-page-nav">
+  <div class="container">
+    <div class="row align-items-center justify-content-end">
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="/">
+          <svg width="111" height="40" viewBox="0 0 111 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1237_1130)">
+              <path d="M38.4687 0H1.75379C0.7852 0 0 0.780857 0 1.74409V38.2559C0 39.2191 0.7852 40 1.75379 40H38.4687C39.4373 40 40.2225 39.2191 40.2225 38.2559V1.74409C40.2225 0.780857 39.4373 0 38.4687 0Z"
+                    fill="white"/>
+              <path d="M48.4258 17.737H62.2338V14.4414H52.5269V10.3379H60.8081V7.14579H52.5269V3.2938H62.2338V0H48.4258V17.737Z"
+                    fill="white"/>
+              <path d="M95.5608 12.8471H98.8478C100.426 12.8471 101.798 12.5903 102.961 12.0731C104.125 11.5577 105.02 10.8159 105.65 9.84396C106.279 8.87383 106.593 7.73785 106.593 6.43602C106.593 5.11815 106.279 3.9786 105.65 3.0156C105.02 2.05261 104.125 1.30896 102.961 0.786447C101.798 0.262149 100.426 0 98.8478 0H91.6641V17.737H95.5626V12.8471H95.5608ZM95.5608 3.34552H98.9231C100.162 3.34552 101.105 3.61124 101.751 4.14445C102.397 4.67588 102.719 5.44093 102.719 6.43781C102.719 7.41864 102.397 8.17298 101.751 8.7062C101.105 9.23763 100.162 9.50513 98.9231 9.50513H95.5608V3.34552Z"
+                    fill="white"/>
+              <path d="M79.4674 31.8038C80.1058 30.8497 80.4232 29.7137 80.4232 28.3958C80.4232 27.0779 80.1094 25.9366 79.4799 24.9736C78.8505 24.0124 77.9557 23.267 76.7919 22.7445C75.628 22.2219 74.2562 21.958 72.6782 21.958H65.5195V39.695H69.3911V34.7552H72.8808L76.3202 39.695H80.7549L76.7542 33.9937C77.9252 33.4854 78.8308 32.756 79.4674 31.802V31.8038ZM75.5832 30.6767C74.9359 31.217 73.9944 31.4881 72.7553 31.4881H69.3929V25.3053H72.7553C73.9944 25.3053 74.9376 25.5728 75.5832 26.1042C76.227 26.6375 76.5498 27.4007 76.5498 28.3976C76.5498 29.3766 76.227 30.1363 75.5832 30.6785V30.6767Z"
+                    fill="white"/>
+              <path d="M109.723 26.1279C108.873 24.7333 107.711 23.6401 106.233 22.8465C104.756 22.053 103.09 21.6553 101.239 21.6553C99.3869 21.6553 97.7192 22.053 96.2326 22.8465C94.746 23.6401 93.5839 24.7333 92.7429 26.1279C91.9019 27.5206 91.4805 29.0882 91.4805 30.8287C91.4805 32.5674 91.9001 34.135 92.7429 35.5295C93.5839 36.9223 94.746 38.0155 96.2326 38.8109C97.7192 39.6045 99.3887 40.0021 101.239 40.0021C103.09 40.0021 104.756 39.6045 106.233 38.8109C107.711 38.0173 108.875 36.9241 109.723 35.5295C110.571 34.135 110.998 32.5692 110.998 30.8287C110.998 29.0882 110.573 27.5224 109.723 26.1279ZM106.391 33.7676C105.878 34.629 105.17 35.3013 104.268 35.7828C103.366 36.2643 102.356 36.505 101.239 36.505C100.122 36.505 99.1107 36.2643 98.2105 35.7828C97.3085 35.3013 96.6002 34.629 96.0873 33.7676C95.5727 32.9063 95.3162 31.9254 95.3162 30.8287C95.3162 29.7302 95.5727 28.7511 96.0873 27.888C96.602 27.0267 97.3085 26.3543 98.2105 25.8728C99.1125 25.3931 100.122 25.1524 101.239 25.1524C102.356 25.1524 103.366 25.3931 104.268 25.8728C105.17 26.3543 105.878 27.0267 106.391 27.888C106.906 28.7493 107.162 29.7302 107.162 30.8287C107.162 31.9254 106.906 32.9063 106.391 33.7676Z"
+                    fill="white"/>
+              <path d="M48.4258 39.6951H62.2338V36.4013H52.5269V32.2979H60.8081V29.104H52.5269V25.2538H62.2338V21.96H48.4258V39.6951Z"
+                    fill="white"/>
+              <path d="M88.3995 21.96H84.4023V39.6969H88.3995V21.96Z" fill="white"/>
+              <path d="M84.4562 0.00878906L76.9353 7.73237L69.3876 0.00878906H68.9303H65.5195V17.7279H69.3876V7.32399V5.48003L76.9353 13.2L84.4562 5.45328V7.09573L84.4813 17.7279H88.3511L88.2991 0.00878906H84.4562Z"
+                    fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1237_1130">
+                <rect width="111" height="40" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      <div class="col-6 col-md-7 d-none d-md-flex flex-row justify-content-between col-lg-7 col-xl-7 col-xxl-8">
+        <div id="breadcrumb">
+
+        </div>
+        <div class="desktop-menu d-none d-lg-flex align-items-center">
+          <nav>
+            <ul>
+              <li><a href="#">Immobilienwelt</a></li>
+              <li><a href="verkaufen.html">Verkaufen</a></li>
+              <li><a href="kaufen.html">Kaufen</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-flex flex-row justify-content-end">
+        <div class="menu">
+          <div class="menu-item long"></div>
+          <div class="menu-item short"></div>
+          <div class="menu-item long"></div>
+          <div class="menu-item short"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="menu-modal">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 col-md-6 h-100 d-flex flex-column justify-content-between">
+        <div class="menu-modal-header">
+          <div class="close">
+                <span>
+                    <img src="img/close.svg" alt="">
+                </span>
+            Schliessen
+          </div>
+          <a href="#" class="button">
+            Immobilienbewertung
+            <img src="img/link-arrow.svg" alt="">
+          </a>
+          <nav>
+            <ol class="menu-modal-menu">
+              <li class="has-child">
+                <a href="#">Immobilienwelt</a>
+                <ul>
+                  <li><a href="kaufen.html">Kaufen und mieten Listing</a></li>
+                  <li><a href="verkaufen.html">Verkaufen</a></li>
+                  <li><a href="#">Immobilien wissen</a></li>
+                  <li><a href="#">Erfolgsgeschichten</a></li>
+                </ul>
+              </li>
+              <li class="has-child">
+                <a href="#">Über emperio</a>
+                <ul>
+                  <li><a href="#">Unternehmen</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Karriere und jobs</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Downloads</a></li>
+                </ul>
+              </li>
+              <li class="has-child">
+                <a href="#">Gut beraten</a>
+                <ul>
+                  <li><a href="#">Unsere Standorte</a></li>
+                </ul>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="menu-modal-footer">
+          <h2>EMPERIO AG</h2>
+          <p>
+            <a href="#">+41 44 586 33 44</a>
+          </p>
+          <p>
+            <a href="#">info@emperio.ch</a>
+          </p>
+          <p>
+            Poststrasse 1, CH-8954 Geroldswil/ZH
+          </p>
+          <ul class="social-media">
+            <li>
+              <a href="#">
+                <img src="img/instagram.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/linkedin.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-menu">
+            <li>
+              <a href="#">
+                Terms
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Cookies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-relative d-none d-md-block">
+        <ul class="menu-modal-img menu-modal-img-first">
+          <li>
+            <img src="img/menu-img-1.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-2.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-3.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-4.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-5.png" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3 p-relative d-none d-md-block">
+        <ul class="menu-modal-img menu-modal-img-second">
+          <li>
+            <img src="img/menu-img-5.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-4.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-3.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-2.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-1.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="sub-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Pensionierung</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the <br />
+          printing and typesetting industry.
+        </p>
+      </div>
+      <div class="col-12">
+        <a class="scroll-down" href="#">
+          <img src="img/scroll-arrow.svg" alt="">
+        </a>
+        <img src="img/pensionierung.png" alt="">
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="agent-section wohnimmobillen-page">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2>
+          Lorem Ipsum is simply dummy text of the
+          printing and typesetting industry.
+        </h2>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 col-xl-5 col-xxl-5">
+        <div class="agent-box">
+          <div class="agent-box-img">
+            <img src="img/nicole.png" alt="">
+          </div>
+          <div class="agent-box-content">
+            <div class="agent-box-content-name">NICOLE SCHROTH</div>
+            <div class="agent-box-content-title">Immobilienberaterin</div>
+            <div class="agent-box-content-email">
+              <a href="mailto:nicole.schroth@emperio.ch">nicole.schroth@emperio.ch</a>
+            </div>
+            <div class="agent-box-content-phone">
+              <a href="tel:079 755 09 18">079 755 09 18</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wohnimmobillen-page wohnimmobillen-page-pb">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-11">
+        <img src="img/pensionierung-2.png" alt="">
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        </p>
+        <p>
+          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-page-form wohnimmobillen-page">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12">
+        <h2>
+          Lorem Ipsum <br />
+          is simply dummy text of the
+        </h2>
+      </div>
+      <div class="col-12 col-lg-4 col-xl-3">
+        <div class="agent-box">
+          <div class="agent-box-img">
+            <img src="img/nicole.png" alt="">
+          </div>
+          <div class="agent-box-content">
+            <div class="agent-box-content-name">NICOLE SCHROTH</div>
+            <div class="agent-box-content-title">Immobilienberaterin</div>
+            <div class="agent-box-content-email">
+              <a href="mailto:nicole.schroth@emperio.ch">nicole.schroth@emperio.ch</a>
+            </div>
+            <div class="agent-box-content-phone">
+              <a href="tel:079 755 09 18">079 755 09 18</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7 col-xxl-8">
+        <form action="">
+          <div class="row">
+            <div class="col-12 col-md-12">
+              <div class="row justify-content-between">
+                <div class="col-12 col-md-6 col-lg-6 col-xxl-5">
+                  <div class="form-input-type-two">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Vorname</label>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xxl-5">
+                  <div class="form-input-type-two">
+                    <input type="text" name="lastname" id="lastname" required>
+                    <label for="lastname">Nachname</label>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xxl-5">
+                  <div class="form-input-type-two">
+                    <select name="appeal" id="appeal">
+                      <option value="Anrede" disabled selected>Anrede</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xxl-5">
+                  <div class="form-input-type-two">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">E-Mail</label>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12">
+                  <div class="form-input-type-two h-100">
+                    <textarea name="message" id="message" required></textarea>
+                    <label for="message">Kommentar</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 d-flex align-items-center pt-5">
+              <div class="checkbox">
+                <input type="checkbox" name="gdpr" id="gdpr">
+                <label for="gdpr">Ich akzeptiere die Datenschutzerklärung</label>
+              </div>
+              <button type="submit">
+                Senden
+                <img src="img/link-arrow.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>FAQ</h2>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Wann ist der beste Zeitpunkt, meine Liegenschaft zu verkaufen?</h3>
+
+            <div class="plus">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="answer">
+            <p>Immobilienkäufer finden sich das ganze Jahr über. Wenn Ihre Immobilie jedoch saisonale
+              Aspekte aufweist - z. B. Seeblick oder einen schönen Garten im Frühjahr -
+              lohnt es sich, auf diese Jahreszeit zu warten, um zu verkaufen. Im Allgemeinen ist es am
+              besten, die Ferienzeit zu meiden, es sei denn, Ihre Immobilie ist ein beliebtes Urlaubsziel.
+              Wenn Sie die richtige Jahreszeit abwarten, können Sie Ihre Immobilie von ihrer besten Seite
+              zeigen und mehr Kaufinteressenten anziehen.
+              Saisonale Immobilien werden oft zu einem höheren Preis verkauft, so dass es sich lohnt, sich
+              die Zeit zu nehmen, den richtigen Käufer zu finden, der bereit ist, den von Ihnen
+              geforderten Preis zu zahlen. </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <h3>Wie lange dauert der Verkauf meiner Immobilie?</h3>
+
+            <div class="plus">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="answer">
+            <p>Die häufigste Frage, die Menschen stellen, wenn sie ihre Liegenschaft verkaufen wollen,
+              lautet: „Wie lange wird es dauern?“ Es gibt eine Reihe von Faktoren, die die Dauer des
+              Verkaufs einer Immobilie beeinflussen können. Der wichtigste Faktor ist zweifellos die
+              aktuelle Lage auf dem Immobilienmarkt. Auf einem Käufermarkt stehen mehr Immobilien zum
+              Verkauf als es Käufer gibt, was dazu führen kann, dass Immobilien monatelang oder sogar
+              jahrelang auf dem Markt verweilen. Auf einem Verkäufermarkt hingegen werden Immobilien in
+              der Regel sehr viel schneller verkauft. Ein weiterer wichtiger Faktor ist der Preis sowie
+              die Lage der Immobilie. Planen Sie außerdem etwa eine Woche für die Ausarbeitung der
+              Vermarkungskampagne Ihrer Immobilie ein.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <h3>Lohnt sich die Renovierung Meiner Immobilie vor dem Verkauf?</h3>
+
+            <div class="plus">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="answer">
+            <p>Der Verkauf Ihrer Immobilie kann eine wichtige Entscheidung sein, und es ist wichtig, dass
+              Sie alle Optionen abwägen, bevor Sie eine endgültige Entscheidung treffen. Eine Option, die
+              Sie vielleicht in Betracht ziehen, ist die Renovierung Ihrer Immobilie vor dem Verkauf. Eine
+              Renovierung hat zwar einige Vorteile, aber es gibt auch einige potenzielle Nachteile zu
+              bedenken.Ein Vorteil der Renovierung Ihrer Immobilie vor dem Verkauf ist, dass Sie den
+              Verkaufspreis erhöhen können. Ein gut renoviertes Haus ist für Käufer wahrscheinlich
+              attraktiver, und Sie können daher möglicherweise einen höheren Preis aushandeln. Außerdem
+              können Renovierungen dazu beitragen, dass sich Ihr Haus schneller verkauft, da die Käufer
+              eher an einer bezugsfertigen Immobilie interessiert sind. Es ist jedoch wichtig zu bedenken,
+              dass Renovierungen auch teuer sein können und es keine Garantie dafür gibt, dass sich Ihre
+              Investition auszahlt. In manchen Fällen kann es sinnvoller sein, Ihre Immobilie so zu
+              verkaufen, wie sie ist. Letztendlich hängt die Entscheidung, ob Sie vor dem Verkauf
+              renovieren oder nicht, von Ihrer spezifischen Situation ab. Wenn Sie eine Renovierung in
+              Erwägung ziehen, sollten Sie sich unbedingt von einem Immobilienmakler oder einem anderen
+              Fachmann beraten lassen, um herauszufinden, ob es sich in Ihrem Fall lohnt oder nicht.</p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <h3>Was ist der richtige Verkaufspreis für meine Liegenschaft?</h3>
+
+            <div class="plus">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="answer">
+            <p>Wenn Sie Ihre Liegenschaft verkaufen wollen, spielt der Verkaufspreis natürlich eine wichtige
+              Rolle. Eine Immobilienbewertung unserer Experten kann Ihnen helfen, einen realistischen
+              Verkaufspreis Ihrer Immobilie zu ermitteln. Der geschätzte Wert basiert auf den jüngsten
+              Verkäufen ähnlicher Immobilien in Ihrer Gegend sowie auf der Größe, dem Alter und dem
+              Zustand Ihres Hauses. Die Emperio Immobilien-Experten berücksichtigen dabei auch alle
+              besonderen Merkmale oder Annehmlichkeiten, die den Wert Ihrer Immobilie beeinflussen
+              könnten.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <h3>Wie kann ich sicherstellen, dass meine Liegenschaft das Käuferinteresse weckt?</h3>
+
+            <div class="plus">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="answer">
+            <p>Wenn es um den Verkauf von Wohnimmobilien geht, ist es wichtig, das Interesse der Käufer zu
+              wecken. Es gibt eine Reihe von Dingen, die Verkäufer tun können, um sicherzustellen, dass
+              sich ihre Immobilie von der Konkurrenz abhebt. Eines der wichtigsten Dinge ist, dafür zu
+              sorgen, dass die Immobilie sauber und gut gepflegt ist. Dazu gehört alles, von der
+              Sicherstellung, dass der Rasen gemäht und die Dachrinnen sauber sind, bis hin zum Streichen
+              von abgeplatzten Wänden und der Reparatur von kaputten Armaturen. Darüber hinaus ist es
+              wichtig, die Immobilie so in Szene zu setzen, dass ihre besten Eigenschaften zur Geltung
+              kommen. Dazu kann es gehören, die Möbel umzustellen, einige strategisch platzierte
+              Accessoires hinzuzufügen oder sogar persönliche Gegenstände wie Familienfotos vorübergehend
+              zu entfernen. Mit diesen Schritten können Verkäufer die Chancen erhöhen, ernsthafte Käufer
+              zu gewinnen und ihre Immobilie schließlich zu verkaufen.</p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <h3>Sollte ich wirklich einen Home Stylisten engagieren?</h3>
+
+            <div class="plus">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="answer">
+            <p>Wenn Sie Ihr Haus verkaufen wollen, ist der erste Eindruck entscheidend. Die Attraktivität
+              der Fassade ist ein entscheidender Faktor dafür, ob potenzielle Käufer Ihr Haus überhaupt
+              betreten. Deshalb ist es wichtig, dass Ihr Haus optimal aussieht, bevor Sie es auf den Markt
+              bringen. Eine Möglichkeit, dies zu tun, ist die Beauftragung eines Hausstylisten. Ein
+              professioneller Stylist kann Ihnen dabei helfen, Ihr Haus so in Szene zu setzen, dass seine
+              besten Eigenschaften hervorgehoben und seine Schwächen heruntergespielt werden. Dies kann
+              Ihnen helfen, Ihr Haus schnell und zu einem guten Preis zu verkaufen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-2 col-lg-3 order-2 order-md-1">
+        <a href="#">
+          <img src="img/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="col-12 col-md-5 col-lg-5 order-3 order-md-2 ">
+        <h2>EMPERIO AG</h2>
+        <p>
+          <a href="#">+41 44 586 33 44</a>
+        </p>
+        <p>
+          <a href="#">info@emperio.ch</a>
+        </p>
+        <p>
+          Poststrasse 1, CH-8954 Geroldswil/ZH
+        </p>
+      </div>
+      <div class="col-12 col-md-5 col-lg-4 d-flex flex-column flex-wrap justify-content-center align-items-center d-lg-block order-1 order-md-3">
+        <ul class="social-media order-2 order-md-1">
+          <li>
+            <a href="#">
+              <img src="img/instagram.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/facebook.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/linkedin.svg" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-menu order-3 order-md-2">
+          <li>
+            <a href="#">
+              Terms
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Cookies
+            </a>
+          </li>
+        </ul>
+        <form action="" class="order-1 order-md-2">
+          <div class="form-input-type-two">
+            <input type="email" name="email" id="emailTwo" required>
+            <label for="emailTwo">E-Mail</label>
+          </div>
+          <div class="form-submit">
+            <button type="submit">
+              <img src="img/link-arrow.svg" alt="">
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+<script>
+  var menuElements = document.querySelectorAll('.menu-modal-menu > li');
+  var menuImgContainer = document.querySelector('.menu-modal-img-first');
+  var menuImgContainerSecond = document.querySelector('.menu-modal-img-second');
+
+  function calculatePercent(value, total) {
+    return (value / total) * 100;
+  }
+
+  function getOffset(el) {
+    const rect = el.getBoundingClientRect();
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
+  }
+
+  var widowWith = window.innerHeight;
+
+  var translateYvalue = -50;
+  var translateYvalueSecond = -50;
+  menuElements.forEach(function (element, index) {
+    element.addEventListener('mouseover', function () {
+      var imgIndex = index + 3;
+      var liElement = document.querySelector('.menu-modal-img-first li:nth-child(' + imgIndex + ')');
+      const listItems = document.querySelectorAll('.menu-modal-img-first li');
+
+      listItems.forEach(function (listItem) {
+        listItem.classList.remove('active-menu-img');
+      });
+
+      liElement.classList.toggle('active-menu-img');
+      var liOffset = getOffset(liElement).top;
+      var percent = calculatePercent(liOffset, menuImgContainer.offsetHeight);
+
+      var halfPercent = calculatePercent(liElement.offsetHeight, menuImgContainer.offsetHeight);
+
+      translateYvalue = translateYvalue - (percent - halfPercent);
+      translateYvalueSecond = translateYvalueSecond + (percent - halfPercent);
+
+      menuImgContainer.style.transform = 'translateY(' + translateYvalue + '%)';
+      menuImgContainerSecond.style.transform = 'translateY(' + translateYvalueSecond + '%)';
+
+      console.log('percent: ', percent)
+    });
+
+  });
+
+  const listItems = document.querySelectorAll('.menu-modal-menu > li');
+
+  listItems.forEach(function (listItem) {
+    listItem.addEventListener('mouseout', function () {
+      const listItems = document.querySelectorAll('.menu-modal-img-first li');
+
+      listItems.forEach(function (listItem) {
+        listItem.classList.remove('active-menu-img');
+      });
+    });
+  });
+
+
+  const listElement = document.querySelector('.menu-modal-img-first li'); // li elementini seçin
+  const imgElement = document.querySelector('.menu-modal-img-first img'); // img elementini seçin
+
+  // .menu-modal-img altındaki iki son li elementini kopyalayın
+  var $liElements = $('.menu-modal-img-first li:nth-last-child(-n+2)').clone();
+
+  // .menu-modal-img içine bu elementleri prepend ile ekleyin
+  $('.menu-modal-img').prepend($liElements);
+
+
+  // .menu-modal-img-first içindeki ilk li elementini seçin
+  var liElement = document.querySelectorAll('.menu-modal-img-first li');
+
+  var imgLoad = false;
+
+  // Tıklanan li elementine sahip olmayan ul elementlerini slide up ile kapat
+  $('.has-child').click(function () {
+    $(this).find('ul').slideToggle();
+    $('.has-child ul').not($(this).find('ul')).slideUp();
+  });
+
+
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('header').outerHeight();
+
+  $(window).scroll(function (event) {
+    didScroll = true;
+  });
+
+  setInterval(function () {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
+
+  function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    if (Math.abs(lastScrollTop - st) <= delta)
+      return;
+
+    if (st > lastScrollTop && st > navbarHeight) {
+
+      $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+      if (st + $(window).height() < $(document).height()) {
+        if (window.scrollY === 0) {
+          header.classList.remove('nav-up');
+          header.classList.remove('nav-down');
+        } else {
+          $('header').removeClass('nav-up').addClass('nav-down');
+        }
+      }
+    }
+
+    lastScrollTop = st;
+  }
+
+  const header = document.querySelector('header');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY === 0) {
+      header.classList.remove('nav-up');
+      header.classList.remove('nav-down');
+    }
+  });
+
+</script>
+
+</body>
+</html>

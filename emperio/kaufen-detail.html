@@ -55,8 +55,8 @@
                     <nav>
                         <ul>
                             <li><a href="#">Immobilienwelt</a></li>
-                            <li><a href="#"> Verkaufen</a></li>
-                            <li><a href="#">Kaufen</a></li>
+                            <li><a href="verkaufen.html">Verkaufen</a></li>
+                            <li><a href="kaufen.html">Kaufen</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -93,8 +93,8 @@
                             <li class="has-child">
                                 <a href="#">Immobilienwelt</a>
                                 <ul>
-                                    <li><a href="#">Kaufen und mieten Listing</a></li>
-                                    <li><a href="#">Verkaufen</a></li>
+                                    <li><a href="kaufen.html">Kaufen und mieten Listing</a></li>
+                                    <li><a href="verkaufen.html">Verkaufen</a></li>
                                     <li><a href="#">Immobilien wissen</a></li>
                                     <li><a href="#">Erfolgsgeschichten</a></li>
                                 </ul>
@@ -216,14 +216,14 @@
                     Aargau
                 </h1>
                 <p>
-                    <strong>CHF 1’490’000</strong>
+                    <strong id="kaufen-detail-price">CHF 1’490’000</strong>
                 </p>
             </div>
             <div class="col-12">
                 <a class="scroll-down" href="#">
                     <img src="img/scroll-arrow.svg" alt="">
                 </a>
-                <img src="img/kaufen-detail.png" alt="">
+                <img id="kaufen-detail-img" src="img/kaufen-detail.png" alt="">
             </div>
         </div>
     </div>
@@ -262,14 +262,16 @@
                         </span>
                     </li>
                 </ul>
-                <p>
-                    Neubau-Maisonette-Attikawohnung mit Blick auf die Limmat
-                </p>
-                <p>
-                    In der Aargauer Gemeinde Würenlos gelegen, finden Sie diese Maisonette-Attika-Wohnung in einem
-                    modernen Mehrfamilienhaus als Neubauwohnung. Mit 4.5 Zimmern auf zwei Geschosse verteilt, ist dieser
-                    Wohntraum ideal geeignet für Familien.
-                </p>
+                <div id="description">
+                    <p>
+                        Neubau-Maisonette-Attikawohnung mit Blick auf die Limmat
+                    </p>
+                    <p>
+                        In der Aargauer Gemeinde Würenlos gelegen, finden Sie diese Maisonette-Attika-Wohnung in einem
+                        modernen Mehrfamilienhaus als Neubauwohnung. Mit 4.5 Zimmern auf zwei Geschosse verteilt, ist dieser
+                        Wohntraum ideal geeignet für Familien.
+                    </p>
+                </div>
                 <div class="agent-box">
                     <div class="agent-box-img">
                         <img src="img/nicole.png" alt="">
@@ -336,22 +338,24 @@
         <div class="row align-items-end justify-content-between">
             <div class="col-12 col-md-6 col-lg-6 col-xl-5 col-xxl-5">
                 <div class="text-center">
-                    <img src="img/kaufen-detail-small-1.png" alt="">
+                    <img src="img/kaufen-detail-small-1.png" id="kaufen-image-1" alt="">
                 </div>
                 <div class="text-left">
-                    <img src="img/kaufen-detail-small-2.png" alt="">
+                    <img src="img/kaufen-detail-small-3.png" id="kaufen-image-2" alt="">
                 </div>
-                <p>Über die interne Treppe gelangen Sie bequem eine Etage tiefer. Hier finden Sie das dritte Zimmer mit Zugang zum Garten und eine weitere Nasszelle mit Badewanne, Doppellavabo und WC.</p>
-                <p>Für Ihre Fahrzeuge erwerben Sie für je zzgl. CHF 40'000 zwei Tiefgaragenparkplätze (Nr. 1 + 2).</p>
-                <p>Durch den Bau der Limmattalbahn profitieren Sie zukünftig verkehrstechnisch mit einem idealen Standort.</p>
-                <p>Folgen Sie Ihrem Bauchgefühl und melden Sie sich noch heute für einen unverbindlichen Besichtigungstermin. Wir freuen uns auf Ihren Anruf.</p>
+                <div id="description-2">
+                    <p>Über die interne Treppe gelangen Sie bequem eine Etage tiefer. Hier finden Sie das dritte Zimmer mit Zugang zum Garten und eine weitere Nasszelle mit Badewanne, Doppellavabo und WC.</p>
+                    <p>Für Ihre Fahrzeuge erwerben Sie für je zzgl. CHF 40'000 zwei Tiefgaragenparkplätze (Nr. 1 + 2).</p>
+                    <p>Durch den Bau der Limmattalbahn profitieren Sie zukünftig verkehrstechnisch mit einem idealen Standort.</p>
+                    <p>Folgen Sie Ihrem Bauchgefühl und melden Sie sich noch heute für einen unverbindlichen Besichtigungstermin. Wir freuen uns auf Ihren Anruf.</p>
+                </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6 col-xl-5 col-xxl-5">
                 <div class="text-right">
-                    <img src="img/kaufen-detail-small-3.png" alt="">
+                    <img src="img/kaufen-detail-small-2.png" id="kaufen-image-3" alt="">
                 </div>
                 <div class="text-right">
-                    <img src="img/kaufen-detail-small-4.png" alt="">
+                    <img src="img/kaufen-detail-small-4.png" id="kaufen-image-4" alt="">
                 </div>
             </div>
         </div>
@@ -471,7 +475,7 @@
                             </span>
                         </h3>
                         <input type="range" id="hypothekarzins" min="0" max="4.0" step="0.1" data-pre-text="" data-after-text=".0%">
-                        <label style=""></label>
+                        <label id="hypothekarzins-label" style=""></label>
                     </fieldset>
                     <div class="smaller">
                         <p>* Berechnung beruht auf 2% Hypozins und 20% Eigenmittel</p>
@@ -508,6 +512,12 @@
 <section class="agent-section kaufen-detail-page kaufen-detail-page-second">
     <div class="container">
         <div class="row align-items-end justify-content-center">
+            <div class="col-12 col-md-7 col-lg-8 d-flex flex-row justify-content-center">
+                <h2>
+                    Hat diese Immobilie <br/>
+                    Ihr Interesse geweckt?
+                </h2>
+            </div>
             <div class="col-12 col-md-6 col-lg-6 col-xl-5 col-xxl-5">
                 <div class="agent-box">
                     <div class="agent-box-img">
@@ -683,56 +693,6 @@
         $(this).find('ul').slideToggle();
         $('.has-child ul').not($(this).find('ul')).slideUp();
     });
-
-
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
-
-    $(window).scroll(function (event) {
-        didScroll = true;
-    });
-
-    setInterval(function () {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        if (st > lastScrollTop && st > navbarHeight) {
-
-            $('header').removeClass('nav-down').addClass('nav-up');
-        } else {
-            if (st + $(window).height() < $(document).height()) {
-                if (window.scrollY === 0) {
-                    header.classList.remove('nav-up');
-                    header.classList.remove('nav-down');
-                } else {
-                    $('header').removeClass('nav-up').addClass('nav-down');
-                }
-            }
-        }
-
-        lastScrollTop = st;
-    }
-
-    const header = document.querySelector('header');
-
-    window.addEventListener('scroll', function () {
-        if (window.scrollY === 0) {
-            header.classList.remove('nav-up');
-            header.classList.remove('nav-down');
-        }
-    });
-
 </script>
 
 <script >
@@ -747,17 +707,201 @@
 
         // .percent-price kutusuna data-price değeri olan 690000'ın yüzdesel değerini yaz
         const price = this.dataset.price;
-        percentPrice.textContent = 'CHF ' + (price * this.value) / 100;
+        percentPrice.textContent = 'CHF ' + addCommas((price * this.value) / 100);
         label.style.width = (this.value - 20) / (100 - 20) * 100 + "%";
     });
 
     const hypoRange = document.querySelector('#hypothekarzins');
     const hypoSpan = document.querySelector('#hypo');
+    const hypoLabel = document.querySelector('#hypothekarzins-label');
 
     hypoRange.addEventListener('input', function() {
         // .percent span içine yüzde değerini yaz
         hypoSpan.textContent = this.value + '%';
+        hypoLabel.style.width = (100 / 4) * this.value + "%";
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        hypoSpan.textContent = hypoRange.value + '%';
+        hypoLabel.style.width = (100 / 4) * hypoRange.value + "%";
+        percentSpan.textContent = inputRange.value + '%';
+        const price = inputRange.dataset.price;
+        percentPrice.textContent = 'CHF ' + addCommas((price * inputRange.value) / 100);
+        label.style.width = (inputRange.value - 20) / (100 - 20) * 100 + "%";
+    });
+
+    // Eğer id get parametresi varsa
+    if (new URL(window.location.href).searchParams.has('id')) {
+        // id get parametresini al
+        const id = new URL(window.location.href).searchParams.get('id');
+        // Eğer storage'de veri yoksa veya yarım saat süresi dolduysa
+        if (!localStorage.getItem('data') || (localStorage.getItem('timestamp') && Date.now() - localStorage.getItem('timestamp') > 1800000)) {
+            // https://ofrime.com/server/properties/web2 adresine istek at
+            fetch('https://ofrime.com/server/properties/web2')
+                .then(response => response.json())
+                .then(data => {
+                    // Dönen veriyi storage'a kaydet
+                    localStorage.setItem('data', JSON.stringify(data));
+                    // İstek zamanını storage'a kaydet
+                    localStorage.setItem('timestamp', Date.now());
+                    // id ile eşleşen datayı .test divine ekle
+                    showDetail(data.find(item => item.id == id));
+                });
+        } else {
+            // Eğer storage'de veri varsa ve yarım saat süresi dolmamışsa
+            // localStorage'daki veriyi al
+            const data = JSON.parse(localStorage.getItem('data'));
+
+            // id ile eşleşen datayı .test divine ekle
+            showDetail(data.find(item => item.id == id));
+        }
+    }
+
+    function showDetail(item) {
+        document.querySelector('h1').innerHTML = `${item.plz} ${item.city}, <br />${item.kanton}`;
+        const priceValue = addCommas(item.price);
+        document.querySelector('#kaufen-detail-price').innerHTML = `CHF ${priceValue}`;
+
+        let coverImage = 'https://ofrime.com/server/' + item.Media[0].url;
+        document.querySelector('.swiper-wrapper').innerHTML = '';
+
+        var kaufenImageOne = document.querySelector('#kaufen-image-1');
+        kaufenImageOne.onload = function() {
+            var kaufenImageOneWidth = kaufenImageOne.offsetWidth;
+            var kaufenImageOneHeight = kaufenImageOne.offsetHeight;
+            kaufenImageOne.style.objectFit = 'cover';
+            kaufenImageOne.style.width = kaufenImageOneWidth + 'px';
+            kaufenImageOne.style.height = kaufenImageOneHeight + 'px';
+
+
+            item.Media.forEach(image => {
+                if (image.position == 1) {
+                    document.querySelector('#kaufen-image-1').src = `https://ofrime.com/server/${image.url}`;
+                }
+            });
+        }
+
+        var kaufenImageTwo = document.querySelector('#kaufen-image-2');
+        kaufenImageTwo.onload = function() {
+            var kaufenImageTwoWidth = kaufenImageTwo.offsetWidth;
+            var kaufenImageTwoHeight = kaufenImageTwo.offsetHeight;
+            kaufenImageTwo.style.objectFit = 'cover';
+            kaufenImageTwo.style.width = kaufenImageTwoWidth + 'px';
+            kaufenImageTwo.style.height = kaufenImageTwoHeight + 'px';
+
+
+            item.Media.forEach(image => {
+                if (image.position == 2) {
+                    document.querySelector('#kaufen-image-2').src = `https://ofrime.com/server/${image.url}`;
+                }
+            });
+
+        }
+
+        var kaufenImageThree = document.querySelector('#kaufen-image-3');
+        kaufenImageThree.onload = function() {
+            var kaufenImageThreeWidth = kaufenImageThree.offsetWidth;
+            var kaufenImageThreeHeight = kaufenImageThree.offsetHeight;
+            kaufenImageThree.style.objectFit = 'cover';
+            kaufenImageThree.style.width = kaufenImageThreeWidth + 'px';
+            kaufenImageThree.style.height = kaufenImageThreeWidth + 'px';
+
+
+            item.Media.forEach(image => {
+                if (image.position == 3) {
+                    document.querySelector('#kaufen-image-3').src = `https://ofrime.com/server/${image.url}`;
+                }
+            });
+        }
+
+        var kaufenImageFour = document.querySelector('#kaufen-image-4');
+        kaufenImageFour.onload = function() {
+            var kaufenImageFourWidth = kaufenImageFour.offsetWidth;
+            var kaufenImageFourHeight = kaufenImageFour.offsetHeight;
+            kaufenImageFour.style.objectFit = 'cover';
+            kaufenImageFour.style.width = kaufenImageFourWidth + 'px';
+            kaufenImageFour.style.height = kaufenImageFourHeight + 'px';
+
+
+            item.Media.forEach(image => {
+                if (image.position == 4) {
+                    document.querySelector('#kaufen-image-4').src = `https://ofrime.com/server/${image.url}`;
+                }
+            });
+        }
+
+
+        item.Media.forEach(image => {
+            if (image.position == 0) {
+                coverImage = 'https://ofrime.com/server/' + image.url;
+            }
+
+            document.querySelector('.swiper-wrapper').innerHTML += `<div class="swiper-slide"><img src="https://ofrime.com/server/${image.url}" alt=""></div>`;
+        });
+
+        const agentImage = `https://emperio.ch/assets/images/agents/${item.Agent.username}.jpg`;
+        const agentImageBox = document.querySelectorAll('.agent-box-img img');
+        agentImageBox.forEach(element => {
+            element.src = agentImage;
+        });
+
+        const agentName = document.querySelectorAll('.agent-box-content-name');
+        agentName.forEach(element => {
+            element.innerHTML = item.Agent.firstName + ` ` + item.Agent.lastName;
+        });
+
+        const agentEmail = document.querySelectorAll('.agent-box-content-email a');
+        agentEmail.forEach(element => {
+            element.innerHTML = item.Agent.email;
+            element.href = `mailto:` + item.Agent.email;
+        });
+
+        const agentPhone = document.querySelectorAll('.agent-box-content-phone a');
+        agentPhone.forEach(element => {
+            element.innerHTML = item.Agent.mobile;
+            element.href = `tel:` + item.Agent.mobile;
+        });
+
+
+        let livingSpaceContent = ``;
+        let nrRoomsContent = ``;
+        let nrRestRoomsContent = ``;
+        if (item.livingSpace) {
+            livingSpaceContent = `<li><span><img src="img/floor-plan-black.svg" alt=""></span><span>${item.livingSpace}</span></li>`;
+        }
+
+        if (item.nrRooms) {
+            nrRoomsContent = `<li><span><img src="img/room-black.svg" alt=""></span><span>${item.nrRooms}</span></li>`;
+        }
+
+        if (item.nrRestRooms) {
+            nrRestRoomsContent = `<li><span><img src="img/bathroom-black.svg" alt=""></span><span>${item.nrRestRooms}</span></li>`;
+        }
+
+        document.querySelector('#kaufen-detail-img').src = coverImage;
+
+        document.querySelector('.home-plan-list').innerHTML = '';
+        document.querySelector('.home-plan-list').innerHTML += livingSpaceContent;
+        document.querySelector('.home-plan-list').innerHTML += nrRoomsContent;
+        document.querySelector('.home-plan-list').innerHTML += nrRestRoomsContent;
+
+        document.querySelector('#description').innerHTML = `<p>${item.title}</p>`;
+
+        const description = JSON.parse(item.uidescription);
+        const firstFourSentences = description.intro.split('.')[0] + '.' + description.intro.split('.')[1] + '.' + description.intro.split('.')[2] + '.' + description.intro.split('.')[3] + '.';
+
+        document.querySelector('#description').innerHTML += `<p>${firstFourSentences}</p>`;
+
+        let paragraphs = item.description.split("<br><br>");
+        let secondParagraph = paragraphs[3] + paragraphs[4];
+        let secondParagraphTwo = paragraphs[1] + paragraphs[2] + paragraphs[5];
+
+        document.querySelector('.kaufen-detail-page-text .col-12').innerHTML = `<p>${secondParagraph}</p>`;
+        document.querySelector('#description-2').innerHTML = `<p>${secondParagraphTwo}</p>`;
+
+        document.querySelector('#percent-price').innerHTML = 'CHF ' + addCommas(priceValue);
+        document.querySelector('#price').setAttribute('data-price', item.price);
+    }
 
 </script>
 

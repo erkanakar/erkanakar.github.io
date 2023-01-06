@@ -48,8 +48,8 @@
                     <nav>
                         <ul>
                             <li><a href="#">Immobilienwelt</a></li>
-                            <li><a href="#"> Verkaufen</a></li>
-                            <li><a href="#">Kaufen</a></li>
+                            <li><a href="verkaufen.html">Verkaufen</a></li>
+                            <li><a href="kaufen.html">Kaufen</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -86,8 +86,8 @@
                             <li class="has-child">
                                 <a href="#">Immobilienwelt</a>
                                 <ul>
-                                    <li><a href="#">Kaufen und mieten Listing</a></li>
-                                    <li><a href="#">Verkaufen</a></li>
+                                    <li><a href="kaufen.html">Kaufen und mieten Listing</a></li>
+                                    <li><a href="verkaufen.html">Verkaufen</a></li>
                                     <li><a href="#">Immobilien wissen</a></li>
                                     <li><a href="#">Erfolgsgeschichten</a></li>
                                 </ul>
@@ -225,7 +225,7 @@
         </div>
     </div>
     <div class="home-page-main-form">
-        <form action="">
+        <form action="search.html">
             <div class="form-row">
                 <div class="form-input">
                     <label for="text">Wo suchen Sie?</label>
@@ -235,9 +235,9 @@
                     <label for="select">Absicht</label>
                     <div class="custom-select">
                         <select name="select" id="select">
-                            <option value="Kaufen">Kaufen</option>
-                            <option value="Kaufen">Kaufen</option>
-                            <option value="Mieten">Mieten</option>
+                            <option value="SALE">Kaufen</option>
+                            <option value="SALE">Kaufen</option>
+                            <option value="RENT">Mieten</option>
                         </select>
                     </div>
                 </div>
@@ -844,53 +844,7 @@
     });
 
 
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
 
-    $(window).scroll(function (event) {
-        didScroll = true;
-    });
-
-    setInterval(function () {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        if (st > lastScrollTop && st > navbarHeight) {
-
-            $('header').removeClass('nav-down').addClass('nav-up');
-        } else {
-            if (st + $(window).height() < $(document).height()) {
-                if (window.scrollY === 0) {
-                    header.classList.remove('nav-up');
-                    header.classList.remove('nav-down');
-                } else {
-                    $('header').removeClass('nav-up').addClass('nav-down');
-                }
-            }
-        }
-
-        lastScrollTop = st;
-    }
-
-    const header = document.querySelector('header');
-
-    window.addEventListener('scroll', function () {
-        if (window.scrollY === 0) {
-            header.classList.remove('nav-up');
-            header.classList.remove('nav-down');
-        }
-    });
 
 </script>
 

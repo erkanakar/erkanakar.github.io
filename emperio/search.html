@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EMPERIO</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+
+<header class="sub-page-nav">
+  <div class="container">
+    <div class="row align-items-center justify-content-end">
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-2">
+        <a href="/">
+          <svg width="111" height="40" viewBox="0 0 111 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1237_1130)">
+              <path d="M38.4687 0H1.75379C0.7852 0 0 0.780857 0 1.74409V38.2559C0 39.2191 0.7852 40 1.75379 40H38.4687C39.4373 40 40.2225 39.2191 40.2225 38.2559V1.74409C40.2225 0.780857 39.4373 0 38.4687 0Z"
+                    fill="white"/>
+              <path d="M48.4258 17.737H62.2338V14.4414H52.5269V10.3379H60.8081V7.14579H52.5269V3.2938H62.2338V0H48.4258V17.737Z"
+                    fill="white"/>
+              <path d="M95.5608 12.8471H98.8478C100.426 12.8471 101.798 12.5903 102.961 12.0731C104.125 11.5577 105.02 10.8159 105.65 9.84396C106.279 8.87383 106.593 7.73785 106.593 6.43602C106.593 5.11815 106.279 3.9786 105.65 3.0156C105.02 2.05261 104.125 1.30896 102.961 0.786447C101.798 0.262149 100.426 0 98.8478 0H91.6641V17.737H95.5626V12.8471H95.5608ZM95.5608 3.34552H98.9231C100.162 3.34552 101.105 3.61124 101.751 4.14445C102.397 4.67588 102.719 5.44093 102.719 6.43781C102.719 7.41864 102.397 8.17298 101.751 8.7062C101.105 9.23763 100.162 9.50513 98.9231 9.50513H95.5608V3.34552Z"
+                    fill="white"/>
+              <path d="M79.4674 31.8038C80.1058 30.8497 80.4232 29.7137 80.4232 28.3958C80.4232 27.0779 80.1094 25.9366 79.4799 24.9736C78.8505 24.0124 77.9557 23.267 76.7919 22.7445C75.628 22.2219 74.2562 21.958 72.6782 21.958H65.5195V39.695H69.3911V34.7552H72.8808L76.3202 39.695H80.7549L76.7542 33.9937C77.9252 33.4854 78.8308 32.756 79.4674 31.802V31.8038ZM75.5832 30.6767C74.9359 31.217 73.9944 31.4881 72.7553 31.4881H69.3929V25.3053H72.7553C73.9944 25.3053 74.9376 25.5728 75.5832 26.1042C76.227 26.6375 76.5498 27.4007 76.5498 28.3976C76.5498 29.3766 76.227 30.1363 75.5832 30.6785V30.6767Z"
+                    fill="white"/>
+              <path d="M109.723 26.1279C108.873 24.7333 107.711 23.6401 106.233 22.8465C104.756 22.053 103.09 21.6553 101.239 21.6553C99.3869 21.6553 97.7192 22.053 96.2326 22.8465C94.746 23.6401 93.5839 24.7333 92.7429 26.1279C91.9019 27.5206 91.4805 29.0882 91.4805 30.8287C91.4805 32.5674 91.9001 34.135 92.7429 35.5295C93.5839 36.9223 94.746 38.0155 96.2326 38.8109C97.7192 39.6045 99.3887 40.0021 101.239 40.0021C103.09 40.0021 104.756 39.6045 106.233 38.8109C107.711 38.0173 108.875 36.9241 109.723 35.5295C110.571 34.135 110.998 32.5692 110.998 30.8287C110.998 29.0882 110.573 27.5224 109.723 26.1279ZM106.391 33.7676C105.878 34.629 105.17 35.3013 104.268 35.7828C103.366 36.2643 102.356 36.505 101.239 36.505C100.122 36.505 99.1107 36.2643 98.2105 35.7828C97.3085 35.3013 96.6002 34.629 96.0873 33.7676C95.5727 32.9063 95.3162 31.9254 95.3162 30.8287C95.3162 29.7302 95.5727 28.7511 96.0873 27.888C96.602 27.0267 97.3085 26.3543 98.2105 25.8728C99.1125 25.3931 100.122 25.1524 101.239 25.1524C102.356 25.1524 103.366 25.3931 104.268 25.8728C105.17 26.3543 105.878 27.0267 106.391 27.888C106.906 28.7493 107.162 29.7302 107.162 30.8287C107.162 31.9254 106.906 32.9063 106.391 33.7676Z"
+                    fill="white"/>
+              <path d="M48.4258 39.6951H62.2338V36.4013H52.5269V32.2979H60.8081V29.104H52.5269V25.2538H62.2338V21.96H48.4258V39.6951Z"
+                    fill="white"/>
+              <path d="M88.3995 21.96H84.4023V39.6969H88.3995V21.96Z" fill="white"/>
+              <path d="M84.4562 0.00878906L76.9353 7.73237L69.3876 0.00878906H68.9303H65.5195V17.7279H69.3876V7.32399V5.48003L76.9353 13.2L84.4562 5.45328V7.09573L84.4813 17.7279H88.3511L88.2991 0.00878906H84.4562Z"
+                    fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1237_1130">
+                <rect width="111" height="40" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      <div class="col-6 col-md-7 d-none d-md-flex flex-row justify-content-between col-lg-7 col-xl-7 col-xxl-8">
+        <div id="breadcrumb">
+
+        </div>
+        <div class="desktop-menu d-none d-lg-flex align-items-center">
+          <nav>
+            <ul>
+              <li><a href="#">Immobilienwelt</a></li>
+              <li><a href="verkaufen.html">Verkaufen</a></li>
+              <li><a href="kaufen.html">Kaufen</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-flex flex-row justify-content-end">
+        <div class="menu">
+          <div class="menu-item long"></div>
+          <div class="menu-item short"></div>
+          <div class="menu-item long"></div>
+          <div class="menu-item short"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="menu-modal">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 col-md-6 h-100 d-flex flex-column justify-content-between">
+        <div class="menu-modal-header">
+          <div class="close">
+                <span>
+                    <img src="img/close.svg" alt="">
+                </span>
+            Schliessen
+          </div>
+          <a href="#" class="button">
+            Immobilienbewertung
+            <img src="img/link-arrow.svg" alt="">
+          </a>
+          <nav>
+            <ol class="menu-modal-menu">
+              <li class="has-child">
+                <a href="#">Immobilienwelt</a>
+                <ul>
+                  <li><a href="kaufen.html">Kaufen und mieten Listing</a></li>
+                  <li><a href="verkaufen.html">Verkaufen</a></li>
+                  <li><a href="#">Immobilien wissen</a></li>
+                  <li><a href="#">Erfolgsgeschichten</a></li>
+                </ul>
+              </li>
+              <li class="has-child">
+                <a href="#">Über emperio</a>
+                <ul>
+                  <li><a href="#">Unternehmen</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Karriere und jobs</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Downloads</a></li>
+                </ul>
+              </li>
+              <li class="has-child">
+                <a href="#">Gut beraten</a>
+                <ul>
+                  <li><a href="#">Unsere Standorte</a></li>
+                </ul>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="menu-modal-footer">
+          <h2>EMPERIO AG</h2>
+          <p>
+            <a href="#">+41 44 586 33 44</a>
+          </p>
+          <p>
+            <a href="#">info@emperio.ch</a>
+          </p>
+          <p>
+            Poststrasse 1, CH-8954 Geroldswil/ZH
+          </p>
+          <ul class="social-media">
+            <li>
+              <a href="#">
+                <img src="img/instagram.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/linkedin.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-menu">
+            <li>
+              <a href="#">
+                Terms
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Cookies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 p-relative d-none d-md-block">
+        <ul class="menu-modal-img menu-modal-img-first">
+          <li>
+            <img src="img/menu-img-1.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-2.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-3.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-4.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-5.png" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3 p-relative d-none d-md-block">
+        <ul class="menu-modal-img menu-modal-img-second">
+          <li>
+            <img src="img/menu-img-5.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-4.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-3.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-2.png" alt="">
+          </li>
+          <li>
+            <img src="img/menu-img-1.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="sub-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>
+          Lorem Ipsum <br/>
+          is simply dummy
+        </h1>
+        <p>
+          Wenn Sie einLorem Ipsum is simply <br/>
+          und ein neues beginnen...
+        </p>
+      </div>
+      <div class="col-12"></div>
+    </div>
+  </div>
+</main>
+
+<section class="filter-section d-none">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-12 col-lg-3 col-xl-3 col-xxl-2">
+        <ul class="kaufen-filter">
+          <li class="selected-filter" data-type="SALE">Kaufen</li>
+          <li data-type="RENT">Mieten</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-12 col-lg-9 col-xl-9 col-xxl-10">
+        <ul class="detailed-filter">
+          <li>Ortschaft</li>
+          <li>Objekttyp</li>
+          <li>Preis</li>
+          <li>Zimmer</li>
+          <li>Wohnfläche</li>
+          <li>Merkmale</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kaufen-mieten-list">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-6 col-xl-5 d-none">
+        <div class="kaufen-mieten-list-box">
+          <div class="kaufen-mieten-list-box-img">
+            <img src="img/kaufen-1.png" alt="">
+          </div>
+          <div class="kaufen-mieten-list-box-content">
+            <div class="kaufen-mieten-list-box-content-title">
+              5734 Reinach, Aargau
+            </div>
+            <div class="kaufen-mieten-list-box-content-desc">
+              Neubau-Maisonette-Attikawohnung
+              mit Blick auf die Limmat
+            </div>
+            <div class="kaufen-mieten-list-box-content-detail">
+              <ul class="home-plan-list">
+                <li>
+                                <span>
+                                    <img src="img/floor-plan-black.svg" alt="">
+                                </span>
+                  <span>
+                                    163m²
+                                </span>
+                </li>
+                <li>
+                                <span>
+                                    <img src="img/room-black.svg" alt="">
+                                </span>
+                  <span>
+                                    3,5
+                                </span>
+                </li>
+                <li>
+                                <span>
+                                    <img src="img/bathroom-black.svg" alt="">
+                                </span>
+                  <span>
+                                    3
+                                </span>
+                </li>
+              </ul>
+            </div>
+            <div class="kaufen-mieten-list-box-content-link">
+              <a href="#">
+                CHF 1’490’000 <img src="img/black-link-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-5 d-none">
+        <div class="kaufen-mieten-list-box">
+          <div class="kaufen-mieten-list-box-img">
+            <img src="img/kaufen-2.png" alt="">
+          </div>
+          <div class="kaufen-mieten-list-box-content">
+            <div class="kaufen-mieten-list-box-content-title">
+              9230 Flawil, <br />
+              St. Gallen
+            </div>
+            <div class="kaufen-mieten-list-box-content-desc">
+              Mehrfamilienhaus in top Lage als Renditeobjekt
+              oder Generationenhaus
+            </div>
+            <div class="kaufen-mieten-list-box-content-detail">
+              <ul class="home-plan-list">
+                <li>
+                                <span>
+                                    <img src="img/floor-plan-black.svg" alt="">
+                                </span>
+                  <span>
+                                    163m²
+                                </span>
+                </li>
+                <li>
+                                <span>
+                                    <img src="img/room-black.svg" alt="">
+                                </span>
+                  <span>
+                                    3,5
+                                </span>
+                </li>
+                <li>
+                                <span>
+                                    <img src="img/bathroom-black.svg" alt="">
+                                </span>
+                  <span>
+                                    3
+                                </span>
+                </li>
+              </ul>
+            </div>
+            <div class="kaufen-mieten-list-box-content-link">
+              <a href="#">
+                CHF 880’000 <img src="img/black-link-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-5 d-none">
+        <div class="kaufen-mieten-list-box">
+          <div class="kaufen-mieten-list-box-img">
+            <img src="img/kaufen-3.png" alt="">
+          </div>
+          <div class="kaufen-mieten-list-box-content">
+            <div class="kaufen-mieten-list-box-content-title">
+              6014 Luzern, <br />
+              Luzern
+            </div>
+            <div class="kaufen-mieten-list-box-content-desc">
+              Freistehendes Einfamilienhaus an ruhiger Lage:
+              familienfreundlich und zentral
+            </div>
+            <div class="kaufen-mieten-list-box-content-detail">
+              <ul class="home-plan-list">
+                <li>
+                                <span>
+                                    <img src="img/floor-plan-black.svg" alt="">
+                                </span>
+                  <span>
+                                    163m²
+                                </span>
+                </li>
+                <li>
+                                <span>
+                                    <img src="img/room-black.svg" alt="">
+                                </span>
+                  <span>
+                                    3,5
+                                </span>
+                </li>
+                <li>
+                                <span>
+                                    <img src="img/bathroom-black.svg" alt="">
+                                </span>
+                  <span>
+                                    3
+                                </span>
+                </li>
+              </ul>
+            </div>
+            <div class="kaufen-mieten-list-box-content-link">
+              <a href="#">
+                CHF 1’890’000 <img src="img/black-link-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-5 d-none">
+        <div class="kaufen-mieten-list-box">
+          <div class="kaufen-mieten-list-box-img">
+            <img src="img/kaufen-4.png" alt="">
+          </div>
+          <div class="kaufen-mieten-list-box-content">
+            <div class="kaufen-mieten-list-box-content-title">
+              5734 Reinach, <br />
+              Aargau
+            </div>
+            <div class="kaufen-mieten-list-box-content-desc">
+              Projektankündigung-Neubau-Erdgeschoss-Wohnung
+              mit grosser Grünfläche
+            </div>
+            <div class="kaufen-mieten-list-box-content-detail">
+              <ul class="home-plan-list">
+                <li>
+                                <span>
+                                    <img src="img/floor-plan-black.svg" alt="">
+                                </span>
+                  <span>
+                                    163m²
+                                </span>
+                </li>
+                <li>
+                                <span>
+                                    <img src="img/room-black.svg" alt="">
+                                </span>
+                  <span>
+                                    3,5
+                                </span>
+                </li>
+                <li>
+                                <span>
+                                    <img src="img/bathroom-black.svg" alt="">
+                                </span>
+                  <span>
+                                    3
+                                </span>
+                </li>
+              </ul>
+            </div>
+            <div class="kaufen-mieten-list-box-content-link">
+              <a href="#">
+                CHF 1’050’000 <img src="img/black-link-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-2 col-lg-3 order-2 order-md-1">
+        <a href="#">
+          <img src="img/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="col-12 col-md-5 col-lg-5 order-3 order-md-2 ">
+        <h2>EMPERIO AG</h2>
+        <p>
+          <a href="#">+41 44 586 33 44</a>
+        </p>
+        <p>
+          <a href="#">info@emperio.ch</a>
+        </p>
+        <p>
+          Poststrasse 1, CH-8954 Geroldswil/ZH
+        </p>
+      </div>
+      <div class="col-12 col-md-5 col-lg-4 d-flex flex-column flex-wrap justify-content-center align-items-center d-lg-block order-1 order-md-3">
+        <ul class="social-media order-2 order-md-1">
+          <li>
+            <a href="#">
+              <img src="img/instagram.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/facebook.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/linkedin.svg" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-menu order-3 order-md-2">
+          <li>
+            <a href="#">
+              Terms
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Cookies
+            </a>
+          </li>
+        </ul>
+        <form action="" class="order-1 order-md-2">
+          <div class="form-input-type-two">
+            <input type="email" name="email" id="emailTwo" required>
+            <label for="emailTwo">E-Mail</label>
+          </div>
+          <div class="form-submit">
+            <button type="submit">
+              <img src="img/link-arrow.svg" alt="">
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+<script>
+  var menuElements = document.querySelectorAll('.menu-modal-menu > li');
+  var menuImgContainer = document.querySelector('.menu-modal-img-first');
+  var menuImgContainerSecond = document.querySelector('.menu-modal-img-second');
+
+  function calculatePercent(value, total) {
+    return (value / total) * 100;
+  }
+
+  function getOffset(el) {
+    const rect = el.getBoundingClientRect();
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
+  }
+
+  var widowWith = window.innerHeight;
+
+  var translateYvalue = -50;
+  var translateYvalueSecond = -50;
+  menuElements.forEach(function (element, index) {
+    element.addEventListener('mouseover', function () {
+      var imgIndex = index + 3;
+      var liElement = document.querySelector('.menu-modal-img-first li:nth-child(' + imgIndex + ')');
+      const listItems = document.querySelectorAll('.menu-modal-img-first li');
+
+      listItems.forEach(function (listItem) {
+        listItem.classList.remove('active-menu-img');
+      });
+
+      liElement.classList.toggle('active-menu-img');
+      var liOffset = getOffset(liElement).top;
+      var percent = calculatePercent(liOffset, menuImgContainer.offsetHeight);
+
+      var halfPercent = calculatePercent(liElement.offsetHeight, menuImgContainer.offsetHeight);
+
+      translateYvalue = translateYvalue - (percent - halfPercent);
+      translateYvalueSecond = translateYvalueSecond + (percent - halfPercent);
+
+      menuImgContainer.style.transform = 'translateY(' + translateYvalue + '%)';
+      menuImgContainerSecond.style.transform = 'translateY(' + translateYvalueSecond + '%)';
+
+      console.log('percent: ', percent)
+    });
+
+  });
+
+  const listItems = document.querySelectorAll('.menu-modal-menu > li');
+
+  listItems.forEach(function (listItem) {
+    listItem.addEventListener('mouseout', function () {
+      const listItems = document.querySelectorAll('.menu-modal-img-first li');
+
+      listItems.forEach(function (listItem) {
+        listItem.classList.remove('active-menu-img');
+      });
+    });
+  });
+
+
+  const listElement = document.querySelector('.menu-modal-img-first li'); // li elementini seçin
+  const imgElement = document.querySelector('.menu-modal-img-first img'); // img elementini seçin
+
+  // .menu-modal-img altındaki iki son li elementini kopyalayın
+  var $liElements = $('.menu-modal-img-first li:nth-last-child(-n+2)').clone();
+
+  // .menu-modal-img içine bu elementleri prepend ile ekleyin
+  $('.menu-modal-img').prepend($liElements);
+
+
+  // .menu-modal-img-first içindeki ilk li elementini seçin
+  var liElement = document.querySelectorAll('.menu-modal-img-first li');
+
+  var imgLoad = false;
+
+  // Tıklanan li elementine sahip olmayan ul elementlerini slide up ile kapat
+  $('.has-child').click(function () {
+    $(this).find('ul').slideToggle();
+    $('.has-child ul').not($(this).find('ul')).slideUp();
+  });
+
+  const rows = document.querySelector('.kaufen-mieten-list .row');
+
+  function showLoadingSpinner(rows) {
+    const spinner = document.createElement('div');
+    const spinnerWrapper = document.createElement('div');
+    spinner.classList.add('spinner');
+    spinnerWrapper.classList.add('spinner-wrapper');
+    spinnerWrapper.appendChild(spinner)
+    rows.appendChild(spinnerWrapper);
+  }
+
+  function hideLoadingSpinner(rows) {
+    // .row elemanındaki spinner'ı bulalım ve silelim
+    const spinnerWrapper = rows.querySelector('.spinner-wrapper');
+    rows.removeChild(spinnerWrapper);
+  }
+
+  showLoadingSpinner(rows);
+
+
+  const apiUrl = 'https://ofrime.com/server/properties/web2';
+
+
+
+  if (new URL(window.location.href).searchParams.has('text') || new URL(window.location.href).searchParams.has('select')) {
+    // id get parametresini al
+    const text = new URL(window.location.href).searchParams.get('text');
+    const select = new URL(window.location.href).searchParams.get('select');
+    // Eğer storage'de veri yoksa veya yarım saat süresi dolduysa
+    if (!localStorage.getItem('data') || (localStorage.getItem('timestamp') && Date.now() - localStorage.getItem('timestamp') > 1800000)) {
+      // https://ofrime.com/server/properties/web2 adresine istek at
+      fetch('https://ofrime.com/server/properties/web2')
+              .then(response => response.json())
+              .then(data => {
+                // Dönen veriyi storage'a kaydet
+                localStorage.setItem('data', JSON.stringify(data));
+                // İstek zamanını storage'a kaydet
+                localStorage.setItem('timestamp', Date.now());
+                // id ile eşleşen datayı .test divine ekle
+                if (text != '') {
+                  addDataToRow(data.filter(function(item) {
+                    return item.kanton === text || item.city === text || item.plz === text || item.street === text;
+                  }), select);
+                } else {
+                  addDataToRow(data, select);
+                }
+              });
+    } else {
+      // Eğer storage'de veri varsa ve yarım saat süresi dolmamışsa
+      // localStorage'daki veriyi al
+      const data = JSON.parse(localStorage.getItem('data'));
+
+      if (text != '') {
+        // id ile eşleşen datayı .test divine ekle
+        addDataToRow(data.filter(function(item) {
+          return item.kanton === text || item.city === text || item.plz === text || item.street === text;
+        }), select);
+      } else {
+        addDataToRow(data, select);
+      }
+    }
+  }
+
+  function addDataToRow(data, type) {
+    console.log('addDataToRow', type);
+    console.log('data', data);
+    const row = document.querySelector('.kaufen-mieten-list .row');
+
+    if (type === undefined) {
+      type = 'SALE';
+    }
+    const filteredData = data.filter(item => item.offerType === type).slice(0, 6);
+    filteredData.forEach(item => {
+      const newRow = document.createElement('div');
+      newRow.classList.add('row');
+
+      const newCol = document.createElement('div');
+      newCol.classList.add('col-12', 'col-md-6', 'col-xl-5', 'kaufen-col');
+
+      const newBox = document.createElement('div');
+      newBox.classList.add('kaufen-mieten-list-box');
+
+      const newImg = document.createElement('div');
+      newImg.classList.add('kaufen-mieten-list-box-img');
+
+      let coverImage = item.Media[0].url;
+
+      item.Media.forEach(image => {
+        if (image.position == 0) {
+          coverImage = image.url;
+        }
+      })
+      newImg.innerHTML = `<img src="https://ofrime.com/server/${coverImage}" alt="">`;
+
+      const newContent = document.createElement('div');
+      newContent.classList.add('kaufen-mieten-list-box-content');
+      let livingSpaceContent = ``;
+      let nrRoomsContent = ``;
+      let nrRestRoomsContent = ``;
+      if (item.livingSpace) {
+        livingSpaceContent = `<li><span><img src="img/floor-plan-black.svg" alt=""></span><span>${item.livingSpace}</span></li>`;
+      }
+
+      if (item.nrRooms) {
+        nrRoomsContent = `<li><span><img src="img/room-black.svg" alt=""></span><span>${item.nrRooms}</span></li>`;
+      }
+
+      if (item.nrRestRooms) {
+        nrRestRoomsContent = `<li><span><img src="img/bathroom-black.svg" alt=""></span><span>${item.nrRestRooms}</span></li>`;
+      }
+
+      const priceValue = addCommas(item.price);
+
+      newContent.innerHTML = `
+                    <div class="kaufen-mieten-list-box-content-title">
+                      ${item.plz} ${item.city}, ${item.kanton}
+                    </div>
+                    <div class="kaufen-mieten-list-box-content-desc">
+                      ${item.title}
+                    </div>
+                    <div class="kaufen-mieten-list-box-content-detail">
+                      <ul class="home-plan-list">
+                        ${livingSpaceContent}
+                        ${nrRoomsContent}
+                        ${nrRestRoomsContent}
+                      </ul>
+                    </div>
+                    <div class="kaufen-mieten-list-box-content-link">
+                      <a href="kaufen-detail.html?id=${item.id}">
+                        CHF ${priceValue} <img src="img/black-link-arrow.svg" alt="">
+                      </a>
+                    </div>
+                  `;
+
+      newBox.appendChild(newImg);
+      newBox.appendChild(newContent);
+      newCol.appendChild(newBox);
+      newRow.appendChild(newCol);
+
+      document.querySelector('.kaufen-mieten-list .row').appendChild(newCol);
+
+
+      const kaufenCol = document.querySelectorAll('.kaufen-col');
+
+      kaufenCol.forEach(item => {
+        window.addEventListener('scroll', function () {
+          if (isInViewport(item, 5)) {
+            item.classList.add('kaufen-col-animate');
+          }
+        });
+      });
+    });
+    hideLoadingSpinner(rows);
+  }
+
+
+
+</script>
+
+</body>
+</html>
