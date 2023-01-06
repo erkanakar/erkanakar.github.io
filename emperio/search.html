@@ -701,7 +701,7 @@
           coverImage = image.url;
         }
       })
-      newImg.innerHTML = `<img src="https://ofrime.com/server/${coverImage}" alt="">`;
+      newImg.innerHTML = `<a href="kaufen-detail.html?id=${item.id}"><img src="https://ofrime.com/server/${coverImage}" alt=""></a>`;
 
       const newContent = document.createElement('div');
       newContent.classList.add('kaufen-mieten-list-box-content');

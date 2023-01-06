@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row align-items-center justify-content-end">
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-2">
-                <a href="/">
+                <a href="https://erkanakar.github.io/emperio/">
                     <svg width="111" height="40" viewBox="0 0 111 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1237_1130)">
                             <path d="M38.4687 0H1.75379C0.7852 0 0 0.780857 0 1.74409V38.2559C0 39.2191 0.7852 40 1.75379 40H38.4687C39.4373 40 40.2225 39.2191 40.2225 38.2559V1.74409C40.2225 0.780857 39.4373 0 38.4687 0Z" fill="white"/>
@@ -692,7 +692,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-2 col-lg-3 order-2 order-md-1">
-                <a href="#">
+                <a href="https://erkanakar.github.io/emperio/">
                     <img src="img/logo.svg" alt="">
                 </a>
             </div>
@@ -846,6 +846,129 @@
 
 
 
+</script>
+
+<script>
+    function showLoadingSpinner(rows) {
+        const spinner = document.createElement('div');
+        const spinnerWrapper = document.createElement('div');
+        spinner.classList.add('spinner');
+        spinnerWrapper.classList.add('spinner-wrapper');
+        spinnerWrapper.appendChild(spinner)
+        rows.appendChild(spinnerWrapper);
+    }
+
+    function hideLoadingSpinner(rows) {
+        // .row elemanındaki spinner'ı bulalım ve silelim
+        const spinnerWrapper = rows.querySelector('.spinner-wrapper');
+        rows.removeChild(spinnerWrapper);
+    }
+
+
+    const rows = document.querySelector('.project-slider .swiper-wrapper');
+    rows.innerHTML = '';
+
+    showLoadingSpinner(rows);
+
+
+    const apiUrl = 'https://ofrime.com/server/properties/web2';
+
+    function getData() {
+        // yarım saat süre dolduysa veya localStorage'da veri yoksa istek at
+        if (!localStorage.getItem('data') || Date.now() - localStorage.getItem('timestamp') > 1800000) {
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // İstekten dönen veriyi localStorage'a kaydet
+                    localStorage.setItem('data', JSON.stringify(data));
+                    localStorage.setItem('timestamp', Date.now());
+                    // Veriyi .row içine ekle
+                    addDataToRow(data);
+                });
+        } else {
+            // localStorage'da veri varsa, veriyi .row içine ekle
+            addDataToRow(JSON.parse(localStorage.getItem('data')));
+        }
+    }
+
+    function addDataToRow(data, type) {
+        console.log('addDataToRow', type);
+        const row = document.querySelector('.project-slider .swiper-wrapper');
+
+        if (type === undefined) {
+            type = 'SALE';
+        }
+        const filteredData = data.filter(item => item.offerType === type).slice(0, 6);
+        filteredData.forEach(item => {
+            const newRow = document.createElement('div');
+            newRow.classList.add('row');
+
+            const newCol = document.createElement('div');
+            newCol.classList.add('swiper-slide');
+
+
+            let coverImage = item.Media[0].url;
+
+            item.Media.forEach(image => {
+                if (image.position == 0) {
+                    coverImage = image.url;
+                }
+            })
+
+            const newContent = document.createElement('div');
+            newContent.classList.add('project-slide');
+            newContent.style.backgroundImage = `url(https://ofrime.com/server/${coverImage})`;
+            let livingSpaceContent = ``;
+            let nrRoomsContent = ``;
+            let nrRestRoomsContent = ``;
+            if (item.livingSpace) {
+                livingSpaceContent = `<li><span><img src="img/floor-plan.svg" alt=""></span><span>${item.livingSpace}</span></li>`;
+            }
+
+            if (item.nrRooms) {
+                nrRoomsContent = `<li><span><img src="img/room.svg" alt=""></span><span>${item.nrRooms}</span></li>`;
+            }
+
+            if (item.nrRestRooms) {
+                nrRestRoomsContent = `<li><span><img src="img/bathroom.svg" alt=""></span><span>${item.nrRestRooms}</span></li>`;
+            }
+            const priceValue = addCommas(item.price);
+            newContent.innerHTML = `
+                    <div class="project-slide-price">
+                        CHF ${priceValue}
+                    </div>
+                    <div class="project-slide-bottom">
+
+                        <div class="project-slide-name">
+                      ${item.plz} ${item.city}, ${item.kanton}
+                        </div>
+                        <div class="project-slide-desc">
+                      ${item.title}
+                        </div>
+                        <div class="project-slide-detail">
+                            <ul>
+                        ${livingSpaceContent}
+                        ${nrRoomsContent}
+                        ${nrRestRoomsContent}
+                            </ul>
+                            <a href="kaufen-detail.html?id=${item.id}">
+                                <img src="img/link-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                  `;
+
+            newCol.appendChild(newContent);
+            newRow.appendChild(newCol);
+
+            document.querySelector('.project-slider .swiper-wrapper').appendChild(newCol);
+
+
+        });
+        hideLoadingSpinner(rows);
+    }
+
+    getData();
 </script>
 
 </body>
