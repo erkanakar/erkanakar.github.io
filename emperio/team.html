@@ -148,20 +148,20 @@
                     </ul>
                     <ul class="footer-menu">
                         <li>
-                            <a href="#">
-                                Terms
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Privacy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Cookies
-                            </a>
-                        </li>
+                        <a href="impressum.html">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="datenschutzerklaerung.html">
+                            Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="empfehlung.html">
+                            Cookies
+                        </a>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -361,6 +361,93 @@
     </div>
 </section>
 
+<section class="team-page-partner-section benefits-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Partners</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 partner-box">
+                <img src="img/mantiq-logo.png" alt="">
+                <h3>Lorem Ipsum is simply </h3>
+                <p>
+                    Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                </p>
+            </div>
+            <div class="col-12 col-md-4 partner-box">
+                <img src="img/mantiq-logo.png" alt="">
+                <h3>Lorem Ipsum is simply </h3>
+                <p>
+                    Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                </p>
+            </div>
+            <div class="col-12 col-md-4 partner-box">
+                <img src="img/mantiq-logo.png" alt="">
+                <h3>Lorem Ipsum is simply </h3>
+                <p>
+                    Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                </p>
+            </div>
+            <div class="col-12 col-md-4 partner-box">
+                <img src="img/mantiq-logo.png" alt="">
+                <h3>Lorem Ipsum is simply </h3>
+                <p>
+                    Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                </p>
+            </div>
+            <div class="col-12 col-md-4 partner-box">
+                <img src="img/mantiq-logo.png" alt="">
+                <h3>Lorem Ipsum is simply </h3>
+                <p>
+                    Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                </p>
+            </div>
+            <div class="col-12 col-md-4 partner-box">
+                <img src="img/mantiq-logo.png" alt="">
+                <h3>Lorem Ipsum is simply </h3>
+                <p>
+                    Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="partner-modal">
+    <div class="partner-modal-wrapper">
+        <div class="partner-modal-close">
+            <img src="img/modal-close-icon.svg" alt="">
+        </div>
+        <div class="partner-modal-wrapper-content">
+            <img src="img/mantiq-logo.png" alt="">
+            <h2>Lorem Ipsum is simply</h2>
+            <p>
+                <a href="mailto:info@mantiq.ch">info@mantiq.ch</a>
+                <a href="tel:++11 11 111 11 11">+11 11 111 11 11</a>
+            </p>
+            <p>
+                Ort:Zürich / Aargau <br>
+                <a href="www.mantiq.ch">www.mantiq.ch</a>
+            </p>
+            <div class="partner-modal-wrapper-content-social">
+                <ul>
+                    <li><a href="#"><img src="img/social-instagram.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/social-facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/social-linkedin.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="team-modal">
     <div class="team-modal-wrapper">
         <div class="team-modal-close">
@@ -378,6 +465,13 @@
                 <a href="tel:+41 79 755 09 18">+41 79 755 09 18</a>
                 <p>Ort:Zürich / Aargau</p>
                 <a href="tel:+41 44 586 33 44">+41 44 586 33 44</a>
+                <div class="team-modal-wrapper-detail-row-social">
+                    <ul>
+                        <li><a href="#"><img src="img/social-instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/social-facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/social-linkedin.svg" alt=""></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="team-modal-wrapper-description">
                 <p>Lorem ipsum dolor sit amet, probo partem volutpat his an, iudico prompta consequuntur his ut. Usu cu
@@ -433,17 +527,17 @@
                 </ul>
                 <ul class="footer-menu order-3 order-md-2">
                     <li>
-                        <a href="#">
+                        <a href="impressum.html">
                             Terms
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="datenschutzerklaerung.html">
                             Privacy
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="empfehlung.html">
                             Cookies
                         </a>
                     </li>
@@ -466,97 +560,33 @@
 
 <script src="js/app.min.js"></script>
 
-<script>
-    var menuElements = document.querySelectorAll('.menu-modal-menu > li');
-    var menuImgContainer = document.querySelector('.menu-modal-img-first');
-    var menuImgContainerSecond = document.querySelector('.menu-modal-img-second');
-
-    function calculatePercent(value, total) {
-        return (value / total) * 100;
-    }
-
-    function getOffset(el) {
-        const rect = el.getBoundingClientRect();
-        return {
-            left: rect.left + window.scrollX,
-            top: rect.top + window.scrollY
-        };
-    }
-
-    var widowWith = window.innerHeight;
-
-    var translateYvalue = -50;
-    var translateYvalueSecond = -50;
-    menuElements.forEach(function (element, index) {
-        element.addEventListener('mouseover', function () {
-            var imgIndex = index + 3;
-            var liElement = document.querySelector('.menu-modal-img-first li:nth-child(' + imgIndex + ')');
-            const listItems = document.querySelectorAll('.menu-modal-img-first li');
-
-            listItems.forEach(function (listItem) {
-                listItem.classList.remove('active-menu-img');
-            });
-
-            liElement.classList.toggle('active-menu-img');
-            var liOffset = getOffset(liElement).top;
-            var percent = calculatePercent(liOffset, menuImgContainer.offsetHeight);
-
-            var halfPercent = calculatePercent(liElement.offsetHeight, menuImgContainer.offsetHeight);
-
-            translateYvalue = translateYvalue - (percent - halfPercent);
-            translateYvalueSecond = translateYvalueSecond + (percent - halfPercent);
-
-            menuImgContainer.style.transform = 'translateY(' + translateYvalue + '%)';
-            menuImgContainerSecond.style.transform = 'translateY(' + translateYvalueSecond + '%)';
-
-            console.log('percent: ', percent)
-        });
-
-    });
-
-    const listItems = document.querySelectorAll('.menu-modal-menu > li');
-
-    listItems.forEach(function (listItem) {
-        listItem.addEventListener('mouseout', function () {
-            const listItems = document.querySelectorAll('.menu-modal-img-first li');
-
-            listItems.forEach(function (listItem) {
-                listItem.classList.remove('active-menu-img');
-            });
-        });
-    });
-
-
-    const listElement = document.querySelector('.menu-modal-img-first li'); // li elementini seçin
-    const imgElement = document.querySelector('.menu-modal-img-first img'); // img elementini seçin
-
-    // .menu-modal-img altındaki iki son li elementini kopyalayın
-    var $liElements = $('.menu-modal-img-first li:nth-last-child(-n+2)').clone();
-
-    // .menu-modal-img içine bu elementleri prepend ile ekleyin
-    $('.menu-modal-img').prepend($liElements);
-
-
-    // .menu-modal-img-first içindeki ilk li elementini seçin
-    var liElement = document.querySelectorAll('.menu-modal-img-first li');
-
-    var imgLoad = false;
-
-    // Tıklanan li elementine sahip olmayan ul elementlerini slide up ile kapat
-    $('.has-child').click(function () {
-        $(this).find('ul').slideToggle();
-        $('.has-child ul').not($(this).find('ul')).slideUp();
-    });
-
-
-</script>
-
 <script !src="">
     // Find the elements
     const datePageBox = document.querySelectorAll('.team-page-box');
     const teamModal = document.querySelector('.team-modal');
     const teamModalWrapper = document.querySelector('.team-modal-wrapper');
     const teamModalClose = document.querySelector('.team-modal-close');
+
+
+    const partnerModal = document.querySelector('.partner-modal');
+    const partnerBox = document.querySelectorAll('.partner-box');
+    const partnerModalClose = document.querySelector('.partner-modal-close');
+
+    // Add an event listener to the datePageBox element
+    partnerBox.forEach(function (el, i) {
+        el.addEventListener('click', function () {
+            // Show the teamModal
+            partnerModal.style.display = 'block';
+            document.querySelector('body').style.overflow = 'hidden';
+        })
+    });
+
+    // Add an event listener to the teamModalClose button
+    partnerModalClose.addEventListener('click', function () {
+        // Close the teamModal
+        partnerModal.style.display = 'none';
+        document.querySelector('body').style.overflow = 'unset';
+    });
 
     // Add an event listener to the datePageBox element
     datePageBox.forEach(function (el, i) {
@@ -579,6 +609,7 @@
         if (event.key === 'Escape') {
             teamModal.style.display = 'none';
             document.querySelector('body').style.overflow = 'unset';
+            partnerModal.style.display = 'none';
         }
     });
 

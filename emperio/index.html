@@ -141,20 +141,20 @@
                     </ul>
                     <ul class="footer-menu">
                         <li>
-                            <a href="#">
-                                Terms
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Privacy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Cookies
-                            </a>
-                        </li>
+                        <a href="impressum.html">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="datenschutzerklaerung.html">
+                            Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="empfehlung.html">
+                            Cookies
+                        </a>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -568,7 +568,7 @@
                 <h2>NEWS</h2>
             </div>
             <div class="col-2 col-xxl-1">
-                <a href="#">
+                <a href="news.html">
                     <img src="img/news-arrow.svg" alt="">
                 </a>
             </div>
@@ -577,42 +577,50 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="home-page-news-slide">
-                                <h3>Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <p>
-                                    <span>september 14, 2022</span>
-                                </p>
+                                <a href="news-detail.html">
+                                    <h3>Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>
+                                        <span>september 14, 2022</span>
+                                    </p>
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="home-page-news-slide">
-                                <h3>Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <p>
-                                    <span>september 14, 2022</span>
-                                </p>
+                                <a href="news-detail.html">
+                                    <h3>Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>
+                                        <span>september 14, 2022</span>
+                                    </p>
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="home-page-news-slide">
-                                <h3>Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <p>
-                                    <span>september 14, 2022</span>
-                                </p>
+                                <a href="news-detail.html">
+                                    <h3>Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>
+                                        <span>september 14, 2022</span>
+                                    </p>
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="home-page-news-slide">
-                                <h3>Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <p>
-                                    <span>september 14, 2022</span>
-                                </p>
+                                <a href="news-detail.html">
+                                    <h3>Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>
+                                        <span>september 14, 2022</span>
+                                    </p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -731,17 +739,17 @@
                 </ul>
                 <ul class="footer-menu order-3 order-md-2">
                     <li>
-                        <a href="#">
+                        <a href="impressum.html">
                             Terms
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="datenschutzerklaerung.html">
                             Privacy
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="empfehlung.html">
                             Cookies
                         </a>
                     </li>
@@ -763,93 +771,6 @@
 </footer>
 
 <script src="js/app.min.js"></script>
-
-<script>
-    var menuElements = document.querySelectorAll('.menu-modal-menu > li');
-    var menuImgContainer = document.querySelector('.menu-modal-img-first');
-    var menuImgContainerSecond = document.querySelector('.menu-modal-img-second');
-
-    function calculatePercent(value, total) {
-        return (value / total) * 100;
-    }
-
-    function getOffset(el) {
-        const rect = el.getBoundingClientRect();
-        return {
-            left: rect.left + window.scrollX,
-            top: rect.top + window.scrollY
-        };
-    }
-
-    var widowWith = window.innerHeight;
-
-    var translateYvalue = -50;
-    var translateYvalueSecond = -50;
-    menuElements.forEach(function (element, index) {
-        element.addEventListener('mouseover', function () {
-            var imgIndex = index + 3;
-            var liElement = document.querySelector('.menu-modal-img-first li:nth-child(' + imgIndex + ')');
-            const listItems = document.querySelectorAll('.menu-modal-img-first li');
-
-            listItems.forEach(function (listItem) {
-                listItem.classList.remove('active-menu-img');
-            });
-
-            liElement.classList.toggle('active-menu-img');
-            var liOffset = getOffset(liElement).top;
-            var percent = calculatePercent(liOffset, menuImgContainer.offsetHeight);
-
-            var halfPercent = calculatePercent(liElement.offsetHeight, menuImgContainer.offsetHeight);
-
-            translateYvalue = translateYvalue - (percent - halfPercent);
-            translateYvalueSecond = translateYvalueSecond + (percent - halfPercent);
-
-            menuImgContainer.style.transform = 'translateY(' + translateYvalue + '%)';
-            menuImgContainerSecond.style.transform = 'translateY(' + translateYvalueSecond + '%)';
-
-            console.log('percent: ', percent)
-        });
-
-    });
-
-    const listItems = document.querySelectorAll('.menu-modal-menu > li');
-
-    listItems.forEach(function (listItem) {
-        listItem.addEventListener('mouseout', function () {
-            const listItems = document.querySelectorAll('.menu-modal-img-first li');
-
-            listItems.forEach(function (listItem) {
-                listItem.classList.remove('active-menu-img');
-            });
-        });
-    });
-
-
-    const listElement = document.querySelector('.menu-modal-img-first li'); // li elementini seçin
-    const imgElement = document.querySelector('.menu-modal-img-first img'); // img elementini seçin
-
-    // .menu-modal-img altındaki iki son li elementini kopyalayın
-    var $liElements = $('.menu-modal-img-first li:nth-last-child(-n+2)').clone();
-
-    // .menu-modal-img içine bu elementleri prepend ile ekleyin
-    $('.menu-modal-img').prepend($liElements);
-
-
-    // .menu-modal-img-first içindeki ilk li elementini seçin
-    var liElement = document.querySelectorAll('.menu-modal-img-first li');
-
-    var imgLoad = false;
-
-    // Tıklanan li elementine sahip olmayan ul elementlerini slide up ile kapat
-    $('.has-child').click(function () {
-        $(this).find('ul').slideToggle();
-        $('.has-child ul').not($(this).find('ul')).slideUp();
-    });
-
-
-
-
-</script>
 
 <script>
     function showLoadingSpinner(rows) {

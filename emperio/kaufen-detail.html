@@ -148,20 +148,20 @@
                     </ul>
                     <ul class="footer-menu">
                         <li>
-                            <a href="#">
-                                Terms
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Privacy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Cookies
-                            </a>
-                        </li>
+                        <a href="impressum.html">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="datenschutzerklaerung.html">
+                            Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="empfehlung.html">
+                            Cookies
+                        </a>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -233,7 +233,7 @@
     <div class="container">
         <div class="row align-items-end justify-content-end">
             <div class="col-12 col-md-6 col-lg-6 col-xl-5 col-xxl-5">
-                <img src="img/kaufen-detail-2.png" alt="">
+                <img src="img/kaufen-detail-2.png" id="kaufen-detail-image" alt="">
             </div>
             <div class="col-12 col-md-6 col-lg-6 col-xl-5 col-xxl-5">
                 <ul class="home-plan-list">
@@ -486,21 +486,21 @@
             <div class="col-12 col-md-12 col-lg-6 col-xl-5 col-xxl-5">
                 <div class="kaufen-detail-page-calc-section-result">
                     <h3>Ihre Liegenschaft</h3>
-                    <p>CHF 2'980'000.-</p>
+                    <p id="liegenschaft">CHF <span>2'980'000</span>.-</p>
                     <h3>Monatliche Kosten **</h3>
-                    <p>CHF 5'195.–</p>
+                    <p id="kosten">CHF <span>5'195</span>.–</p>
                     <div class="kaufen-detail-page-calc-section-result-wrapper">
                         <div>
                             <h3>Zinsen</h3>
-                            <p>CHF 3'457</p>
+                            <p id="zinsen">CHF <span>3'457</span></p>
                         </div>
                         <div>
                             <h3>Amortisation</h3>
-                            <p>CHF 0</p>
+                            <p id="amortisation">CHF <span>0</span></p>
                         </div>
                         <div>
                             <h3>Nebenkosten</h3>
-                            <p>CHF 1'738</p>
+                            <p id="nebenkosten">CHF <span>1'738</span></p>
                         </div>
                     </div>
                 </div>
@@ -579,17 +579,17 @@
                 </ul>
                 <ul class="footer-menu order-3 order-md-2">
                     <li>
-                        <a href="#">
+                        <a href="impressum.html">
                             Terms
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="datenschutzerklaerung.html">
                             Privacy
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="empfehlung.html">
                             Cookies
                         </a>
                     </li>
@@ -611,89 +611,6 @@
 </footer>
 
 <script src="js/app.min.js"></script>
-
-<script>
-    var menuElements = document.querySelectorAll('.menu-modal-menu > li');
-    var menuImgContainer = document.querySelector('.menu-modal-img-first');
-    var menuImgContainerSecond = document.querySelector('.menu-modal-img-second');
-
-    function calculatePercent(value, total) {
-        return (value / total) * 100;
-    }
-
-    function getOffset(el) {
-        const rect = el.getBoundingClientRect();
-        return {
-            left: rect.left + window.scrollX,
-            top: rect.top + window.scrollY
-        };
-    }
-
-    var widowWith = window.innerHeight;
-
-    var translateYvalue = -50;
-    var translateYvalueSecond = -50;
-    menuElements.forEach(function (element, index) {
-        element.addEventListener('mouseover', function () {
-            var imgIndex = index + 3;
-            var liElement = document.querySelector('.menu-modal-img-first li:nth-child(' + imgIndex + ')');
-            const listItems = document.querySelectorAll('.menu-modal-img-first li');
-
-            listItems.forEach(function (listItem) {
-                listItem.classList.remove('active-menu-img');
-            });
-
-            liElement.classList.toggle('active-menu-img');
-            var liOffset = getOffset(liElement).top;
-            var percent = calculatePercent(liOffset, menuImgContainer.offsetHeight);
-
-            var halfPercent = calculatePercent(liElement.offsetHeight, menuImgContainer.offsetHeight);
-
-            translateYvalue = translateYvalue - (percent - halfPercent);
-            translateYvalueSecond = translateYvalueSecond + (percent - halfPercent);
-
-            menuImgContainer.style.transform = 'translateY(' + translateYvalue + '%)';
-            menuImgContainerSecond.style.transform = 'translateY(' + translateYvalueSecond + '%)';
-
-            console.log('percent: ', percent)
-        });
-
-    });
-
-    const listItems = document.querySelectorAll('.menu-modal-menu > li');
-
-    listItems.forEach(function (listItem) {
-        listItem.addEventListener('mouseout', function () {
-            const listItems = document.querySelectorAll('.menu-modal-img-first li');
-
-            listItems.forEach(function (listItem) {
-                listItem.classList.remove('active-menu-img');
-            });
-        });
-    });
-
-
-    const listElement = document.querySelector('.menu-modal-img-first li'); // li elementini seçin
-    const imgElement = document.querySelector('.menu-modal-img-first img'); // img elementini seçin
-
-    // .menu-modal-img altındaki iki son li elementini kopyalayın
-    var $liElements = $('.menu-modal-img-first li:nth-last-child(-n+2)').clone();
-
-    // .menu-modal-img içine bu elementleri prepend ile ekleyin
-    $('.menu-modal-img').prepend($liElements);
-
-
-    // .menu-modal-img-first içindeki ilk li elementini seçin
-    var liElement = document.querySelectorAll('.menu-modal-img-first li');
-
-    var imgLoad = false;
-
-    // Tıklanan li elementine sahip olmayan ul elementlerini slide up ile kapat
-    $('.has-child').click(function () {
-        $(this).find('ul').slideToggle();
-        $('.has-child ul').not($(this).find('ul')).slideUp();
-    });
-</script>
 
 <script >
     const inputRange = document.querySelector('#price');
@@ -728,6 +645,7 @@
         const price = inputRange.dataset.price;
         percentPrice.textContent = 'CHF ' + addCommas((price * inputRange.value) / 100);
         label.style.width = (inputRange.value - 20) / (100 - 20) * 100 + "%";
+        calculateValues();
     });
 
     // Eğer id get parametresi varsa
@@ -757,78 +675,33 @@
         }
     }
 
+    var detailPrice;
+
     function showDetail(item) {
         document.querySelector('h1').innerHTML = `${item.plz} ${item.city}, <br />${item.kanton}`;
         const priceValue = addCommas(item.price);
         document.querySelector('#kaufen-detail-price').innerHTML = `CHF ${priceValue}`;
 
+        detailPrice = item.price;
+
         let coverImage = 'https://ofrime.com/server/' + item.Media[0].url;
         document.querySelector('.swiper-wrapper').innerHTML = '';
 
         var kaufenImageOne = document.querySelector('#kaufen-image-1');
-        kaufenImageOne.onload = function() {
-            var kaufenImageOneWidth = kaufenImageOne.offsetWidth;
-            var kaufenImageOneHeight = kaufenImageOne.offsetHeight;
-            kaufenImageOne.style.objectFit = 'cover';
-            kaufenImageOne.style.width = kaufenImageOneWidth + 'px';
-            kaufenImageOne.style.height = kaufenImageOneHeight + 'px';
-
-
-            item.Media.forEach(image => {
-                if (image.position == 1) {
-                    document.querySelector('#kaufen-image-1').src = `https://ofrime.com/server/${image.url}`;
-                }
-            });
-        }
 
         var kaufenImageTwo = document.querySelector('#kaufen-image-2');
-        kaufenImageTwo.onload = function() {
-            var kaufenImageTwoWidth = kaufenImageTwo.offsetWidth;
-            var kaufenImageTwoHeight = kaufenImageTwo.offsetHeight;
-            kaufenImageTwo.style.objectFit = 'cover';
-            kaufenImageTwo.style.width = kaufenImageTwoWidth + 'px';
-            kaufenImageTwo.style.height = kaufenImageTwoHeight + 'px';
-
-
-            item.Media.forEach(image => {
-                if (image.position == 2) {
-                    document.querySelector('#kaufen-image-2').src = `https://ofrime.com/server/${image.url}`;
-                }
-            });
-
-        }
 
         var kaufenImageThree = document.querySelector('#kaufen-image-3');
-        kaufenImageThree.onload = function() {
-            var kaufenImageThreeWidth = kaufenImageThree.offsetWidth;
-            var kaufenImageThreeHeight = kaufenImageThree.offsetHeight;
-            kaufenImageThree.style.objectFit = 'cover';
-            kaufenImageThree.style.width = kaufenImageThreeWidth + 'px';
-            kaufenImageThree.style.height = kaufenImageThreeWidth + 'px';
-
-
-            item.Media.forEach(image => {
-                if (image.position == 3) {
-                    document.querySelector('#kaufen-image-3').src = `https://ofrime.com/server/${image.url}`;
-                }
-            });
-        }
 
         var kaufenImageFour = document.querySelector('#kaufen-image-4');
-        kaufenImageFour.onload = function() {
-            var kaufenImageFourWidth = kaufenImageFour.offsetWidth;
-            var kaufenImageFourHeight = kaufenImageFour.offsetHeight;
-            kaufenImageFour.style.objectFit = 'cover';
-            kaufenImageFour.style.width = kaufenImageFourWidth + 'px';
-            kaufenImageFour.style.height = kaufenImageFourHeight + 'px';
 
+        var kaufenImageDetail = document.querySelector('#kaufen-detail-image');
 
-            item.Media.forEach(image => {
-                if (image.position == 4) {
-                    document.querySelector('#kaufen-image-4').src = `https://ofrime.com/server/${image.url}`;
-                }
-            });
-        }
+        addDetailImage(kaufenImageOne, 0, item.Media)
+        addDetailImage(kaufenImageTwo, 1, item.Media)
+        addDetailImage(kaufenImageThree, 2, item.Media)
+        addDetailImage(kaufenImageFour, 3, item.Media)
+        addDetailImage(kaufenImageDetail, 4, item.Media)
 
 
         item.Media.forEach(image => {
@@ -903,6 +776,53 @@
         document.querySelector('#price').setAttribute('data-price', item.price);
     }
 
+    function addDetailImage(imageName, imageIndex, item) {
+
+        imageName.addEventListener('load', function handler() {
+            var kaufenImageOneWidth = imageName.offsetWidth;
+            var kaufenImageOneHeight = imageName.offsetHeight;
+            imageName.style.objectFit = 'cover';
+            imageName.style.width = kaufenImageOneWidth + 'px';
+            imageName.style.height = kaufenImageOneHeight + 'px';
+            item.forEach((image, index) => {
+                if (index === imageIndex) {
+                    imageName.src = `https://ofrime.com/server/${image.url}`;
+                }
+            });
+            imageName.removeEventListener('load', handler);
+        });
+
+    }
+
+    inputRange.addEventListener('input', calculateValues);
+    hypoRange.addEventListener('input', calculateValues);
+
+    const price = detailPrice;
+    // const eigenkapital = document.querySelector('#eigenkapital span');
+    const zinsen = document.querySelector('#zinsen span');
+    const nebenkosten = document.querySelector('#nebenkosten span');
+    const amortisation = document.querySelector('#amortisation span');
+    const kosten = document.querySelector('#kosten span');
+    const liegenschaft = document.querySelector('#liegenschaft span');
+    liegenschaft.textContent = addCommas(price);
+
+    function calculateValues() {
+        const ekp = price * inputRange.value * 0.01;
+        const nkm = price * 0.007 / 12;
+        const zh = (price - ekp) * hypoRange.value * 0.01 / 12;
+        const sh = price - ekp;
+        var amor = (sh - (2/3*price)) / (12*15);
+
+        if (amor < 0) {
+            amor = 0;
+        }
+
+        // eigenkapital.textContent = addCommas(ekp);
+        zinsen.textContent = addCommas(Math.round(zh));
+        nebenkosten.textContent = addCommas(Math.round(nkm));
+        amortisation.textContent = addCommas(Math.round(amor));
+        kosten.textContent = addCommas(Math.round(amor + nkm + zh));
+    }
 </script>
 
 </body>
