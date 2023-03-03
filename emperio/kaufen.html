@@ -96,9 +96,10 @@
                                     <li><a href="kaufen.html">Kaufen und mieten</a></li>
                                     <li><a href="verkaufen.html">Verkaufen</a></li>
                                     <li><a href="immobilien-wissen.html">Immobilien wissen</a></li>
-                                    <li><a href="#">Erfolgsgeschichten</a></li>
-                                    <li><a href="news.html">News</a></li>
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="ratgeber.html">Ratgeber</a>
                             </li>
                             <li class="has-child">
                                 <a href="#">Über emperio</a>
@@ -209,7 +210,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>
+                <h1 class="h1 pre diagonal text-reveal red reveal">
                     Immobilien in Zürich, Aargau, Bern und mehr
                 </h1>
                 <p>
@@ -258,13 +259,13 @@
                     </div>
                     <div class="col-12 col-md-4 col-lg-3 col-xl-4">
                         <label>Zimmer</label>
-                        <div class="range-bar">
+                        <div class="range-bar zimmer-range-bar">
                             <div class="range-bar-min">
                                 <input class="form_control_container__time__input" type="number" id="fromInputZimmer" value="10" min="0" max="100"/>
                             </div>
                             <div class="range-bar-inner">
-                                <input id="fromSliderZimmer" type="range" value="10" min="0" max="100"/>
-                                <input id="toSliderZimmer" type="range" value="40" min="0" max="100"/>
+                                <input id="fromSliderZimmer" type="range" value="10" min="1" max="100"/>
+                                <input id="toSliderZimmer" type="range" value="40" min="1" max="100"/>
                             </div>
                             <div class="range-bar-max">
                                 <input class="form_control_container__time__input" type="number" id="toInputZimmer" value="40" min="0" max="100"/>
@@ -273,13 +274,13 @@
                     </div>
                     <div class="col-12 col-md-4 col-lg-3 col-xl-4">
                         <label>Wohnfläche (m2)</label>
-                        <div class="range-bar">
+                        <div class="range-bar wohnflache-range-bar">
                             <div class="range-bar-min">
                                 <input class="form_control_container__time__input" type="number" id="fromInputWohn" value="10" min="0" max="100"/>
                             </div>
                             <div class="range-bar-inner">
-                                <input id="fromSliderWohn" type="range" value="10" min="0" max="100"/>
-                                <input id="toSliderWohn" type="range" value="40" min="0" max="100"/>
+                                <input id="fromSliderWohn" type="range" value="1" min="1" max="999"/>
+                                <input id="toSliderWohn" type="range" value="100" min="1" max="999"/>
                             </div>
                             <div class="range-bar-max">
                                 <input class="form_control_container__time__input" type="number" id="toInputWohn" value="40" min="0" max="100"/>
@@ -288,13 +289,13 @@
                     </div>
                     <div class="col-12 col-md-4 col-lg-5 col-xl-5">
                         <label>Preis (in CHF)</label>
-                        <div class="range-bar">
+                        <div class="range-bar preis-range-bar">
                             <div class="range-bar-min">
                                 <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
                             </div>
                             <div class="range-bar-inner">
-                                <input id="fromSlider" type="range" value="10" min="0" max="100"/>
-                                <input id="toSlider" type="range" value="40" min="0" max="100"/>
+                                <input id="fromSlider" type="range" value="0" min="0" max="10000000"/>
+                                <input id="toSlider" type="range" value="2000000" min="0" max="10000000"/>
                             </div>
                             <div class="range-bar-max">
                                 <input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100"/>
@@ -563,6 +564,9 @@
         </div>
     </div>
 </section>
+<div id="loading-screen">
+    <img class="loading-icon" src="img/logo-green.svg" alt="Loading Icon">
+</div>
 
 <footer>
     <div class="container">
