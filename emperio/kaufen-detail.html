@@ -96,6 +96,7 @@
                                     <li><a href="kaufen.html">Kaufen und mieten</a></li>
                                     <li><a href="verkaufen.html">Verkaufen</a></li>
                                     <li><a href="immobilien-wissen.html">Immobilien wissen</a></li>
+                                    <li><a href="kaufen.html?type=Referenzen">Referenzen</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -463,8 +464,9 @@
                                 <span id="percent-price">CHF 1'400'600.–</span>
                             </span>
                         </h3>
+                        <div class="divFill"></div>
+                        <div class="divLowerFill" id="price-label"></div>
                         <input type="range" id="price" min="20" max="100" data-pre-text="" data-after-text="%" data-price="1400600">
-                        <label id="price-label" style=""></label>
                     </fieldset>
                     <fieldset>
                         <h3>
@@ -473,8 +475,9 @@
                                 <span id="hypo">2.0%</span>
                             </span>
                         </h3>
+                        <div class="divFill" id="hypothekarzins-label-fill"></div>
+                        <div class="divLowerFill" id="hypothekarzins-label"></div>
                         <input type="range" id="hypothekarzins" min="0" max="4.0" step="0.1" data-pre-text="" data-after-text=".0%">
-                        <label id="hypothekarzins-label" style=""></label>
                     </fieldset>
                     <div class="smaller">
                         <p>* Berechnung beruht auf 2% Hypozins und 20% Eigenmittel</p>
@@ -682,7 +685,13 @@
     function showDetail(item) {
         document.querySelector('h1').innerHTML = `${item.plz} ${item.city}, <br />${item.kanton}`;
         const priceValue = addCommas(item.price);
-        document.querySelector('#kaufen-detail-price').innerHTML = `CHF ${priceValue}`;
+
+        if (item.price == null) {
+            console.log('red');
+            $('#kaufen-detail-price').parent().hide();
+            document.querySelector('#kaufen-detail-price').innerHTML = `CHF ${priceValue}`;
+        }
+
 
         detailPrice = item.price;
 
@@ -798,6 +807,10 @@
 
     inputRange.addEventListener('input', calculateValues);
     hypoRange.addEventListener('input', calculateValues);
+
+    if (detailPrice == null) {
+        $('.kaufen-detail-page-calc-section').hide();
+    }
 
     const price = detailPrice;
     // const eigenkapital = document.querySelector('#eigenkapital span');

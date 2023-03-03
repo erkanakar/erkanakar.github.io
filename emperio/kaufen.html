@@ -96,6 +96,7 @@
                                     <li><a href="kaufen.html">Kaufen und mieten</a></li>
                                     <li><a href="verkaufen.html">Verkaufen</a></li>
                                     <li><a href="immobilien-wissen.html">Immobilien wissen</a></li>
+                                    <li><a href="kaufen.html?type=Referenzen">Referenzen</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -214,7 +215,10 @@
                     Immobilien in Zürich, Aargau, Bern und mehr
                 </h1>
                 <p>
-                    Entdecken Sie eine Vielzahl an Immobilienangeboten aus der ganzen Schweiz. Verkaufen oder kaufen Sie Ihre Immobilie Einfach und schnell mit dem Makler ohne Vertrag. Lassen Sie sich von unseren Bewertungen überzeugen und erfahren Sie alles über Steuern bis hin zu Home Staging und mehr. Starten Sie hier Ihre Immobilienreise.
+                    Entdecken Sie eine Vielzahl an Immobilienangeboten aus der ganzen Schweiz. Verkaufen oder kaufen Sie
+                    Ihre Immobilie Einfach und schnell mit dem Makler ohne Vertrag. Lassen Sie sich von unseren
+                    Bewertungen überzeugen und erfahren Sie alles über Steuern bis hin zu Home Staging und mehr. Starten
+                    Sie hier Ihre Immobilienreise.
                 </p>
             </div>
             <div class="col-12"></div>
@@ -229,15 +233,26 @@
                 <ul class="kaufen-filter">
                     <li class="selected-filter" data-type="SALE">Kaufen</li>
                     <li data-type="RENT">Mieten</li>
+                    <li data-type="Referenzen">Referenzen</li>
                 </ul>
             </div>
             <div class="col-6 col-md-6 col-lg-9 col-xl-9 col-xxl-10 d-flex justify-content-end">
                 <div class="filter-button">
                     <div class="filter-button-open-icon">
-                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 1H1L9 10.46V17L13 19V10.46L21 1Z" stroke="#333232" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 1H1L9 10.46V17L13 19V10.46L21 1Z" stroke="#333232" stroke-width="1.4"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
                     <div class="filter-button-close-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#015048" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 9L9 15" stroke="#015048" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 9L15 15" stroke="#015048" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                  stroke="#015048" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9L9 15" stroke="#015048" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9 9L15 15" stroke="#015048" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
                     </div>
                     <span>Filter</span>
                 </div>
@@ -261,14 +276,16 @@
                         <label>Zimmer</label>
                         <div class="range-bar zimmer-range-bar">
                             <div class="range-bar-min">
-                                <input class="form_control_container__time__input" type="number" id="fromInputZimmer" value="10" min="0" max="100"/>
+                                <input class="form_control_container__time__input" type="number" id="fromInputZimmer"
+                                       value="10" min="0" max="100"/>
                             </div>
                             <div class="range-bar-inner">
                                 <input id="fromSliderZimmer" type="range" value="10" min="1" max="100"/>
                                 <input id="toSliderZimmer" type="range" value="40" min="1" max="100"/>
                             </div>
                             <div class="range-bar-max">
-                                <input class="form_control_container__time__input" type="number" id="toInputZimmer" value="40" min="0" max="100"/>
+                                <input class="form_control_container__time__input" type="number" id="toInputZimmer"
+                                       value="40" min="0" max="100"/>
                             </div>
                         </div>
                     </div>
@@ -276,14 +293,16 @@
                         <label>Wohnfläche (m2)</label>
                         <div class="range-bar wohnflache-range-bar">
                             <div class="range-bar-min">
-                                <input class="form_control_container__time__input" type="number" id="fromInputWohn" value="10" min="0" max="100"/>
+                                <input class="form_control_container__time__input" type="number" id="fromInputWohn"
+                                       value="10" min="0" max="100"/>
                             </div>
                             <div class="range-bar-inner">
                                 <input id="fromSliderWohn" type="range" value="1" min="1" max="999"/>
                                 <input id="toSliderWohn" type="range" value="100" min="1" max="999"/>
                             </div>
                             <div class="range-bar-max">
-                                <input class="form_control_container__time__input" type="number" id="toInputWohn" value="40" min="0" max="100"/>
+                                <input class="form_control_container__time__input" type="number" id="toInputWohn"
+                                       value="40" min="0" max="100"/>
                             </div>
                         </div>
                     </div>
@@ -291,14 +310,16 @@
                         <label>Preis (in CHF)</label>
                         <div class="range-bar preis-range-bar">
                             <div class="range-bar-min">
-                                <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
+                                <input class="form_control_container__time__input" type="number" id="fromInput"
+                                       value="10" min="0" max="100"/>
                             </div>
                             <div class="range-bar-inner">
                                 <input id="fromSlider" type="range" value="0" min="0" max="10000000"/>
                                 <input id="toSlider" type="range" value="2000000" min="0" max="10000000"/>
                             </div>
                             <div class="range-bar-max">
-                                <input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100"/>
+                                <input class="form_control_container__time__input" type="number" id="toInput" value="40"
+                                       min="0" max="100"/>
                             </div>
                         </div>
                     </div>
@@ -344,13 +365,23 @@
                     <div class="button-col">
                         <button class="button-border" type="reset">
                             Zurücksetzen
-                            <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.82812 11.5L1.82812 6.5L6.82812 1.5" stroke="#00A887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.8281 12.5V10.5C17.8281 9.43913 17.4067 8.42172 16.6566 7.67157C15.9064 6.92143 14.889 6.5 13.8281 6.5H1.82812" stroke="#00A887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.82812 11.5L1.82812 6.5L6.82812 1.5" stroke="#00A887" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.8281 12.5V10.5C17.8281 9.43913 17.4067 8.42172 16.6566 7.67157C15.9064 6.92143 14.889 6.5 13.8281 6.5H1.82812"
+                                      stroke="#00A887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </button>
                     </div>
                     <div class="button-col">
                         <button class="button" type="submit">
                             Anwenden
-                            <svg width="28" height="15" viewBox="0 0 28 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.6911 6.70802L22.1431 0.874023C22.0474 0.77066 21.9314 0.688191 21.8023 0.63179C21.6733 0.575389 21.534 0.546265 21.3931 0.546265C21.2523 0.546265 21.1129 0.575389 20.9839 0.63179C20.8548 0.688191 20.7388 0.77066 20.6431 0.874023C20.443 1.08981 20.3318 1.37324 20.3318 1.66753C20.3318 1.96181 20.443 2.24522 20.6431 2.46101L24.3681 6.37802H1.8851C1.59911 6.3951 1.33044 6.52075 1.13398 6.72929C0.93753 6.93783 0.828125 7.21351 0.828125 7.50002C0.828125 7.78652 0.93753 8.06221 1.13398 8.27075C1.33044 8.47929 1.59911 8.60494 1.8851 8.62202H24.3691L20.6441 12.539C20.444 12.7548 20.3328 13.0382 20.3328 13.3325C20.3328 13.6268 20.444 13.9102 20.6441 14.126C20.7398 14.2294 20.8558 14.3119 20.9849 14.3683C21.1139 14.4247 21.2533 14.4538 21.3941 14.4538C21.535 14.4538 21.6743 14.4247 21.8033 14.3683C21.9324 14.3119 22.0484 14.2294 22.1441 14.126L27.6921 8.29202C27.891 8.07617 28.0013 7.79335 28.0011 7.49983C28.001 7.20632 27.8903 6.92363 27.6911 6.70802Z" fill="white"/></svg>
+                            <svg width="28" height="15" viewBox="0 0 28 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.6911 6.70802L22.1431 0.874023C22.0474 0.77066 21.9314 0.688191 21.8023 0.63179C21.6733 0.575389 21.534 0.546265 21.3931 0.546265C21.2523 0.546265 21.1129 0.575389 20.9839 0.63179C20.8548 0.688191 20.7388 0.77066 20.6431 0.874023C20.443 1.08981 20.3318 1.37324 20.3318 1.66753C20.3318 1.96181 20.443 2.24522 20.6431 2.46101L24.3681 6.37802H1.8851C1.59911 6.3951 1.33044 6.52075 1.13398 6.72929C0.93753 6.93783 0.828125 7.21351 0.828125 7.50002C0.828125 7.78652 0.93753 8.06221 1.13398 8.27075C1.33044 8.47929 1.59911 8.60494 1.8851 8.62202H24.3691L20.6441 12.539C20.444 12.7548 20.3328 13.0382 20.3328 13.3325C20.3328 13.6268 20.444 13.9102 20.6441 14.126C20.7398 14.2294 20.8558 14.3119 20.9849 14.3683C21.1139 14.4247 21.2533 14.4538 21.3941 14.4538C21.535 14.4538 21.6743 14.4247 21.8033 14.3683C21.9324 14.3119 22.0484 14.2294 22.1441 14.126L27.6921 8.29202C27.891 8.07617 28.0013 7.79335 28.0011 7.49983C28.001 7.20632 27.8903 6.92363 27.6911 6.70802Z"
+                                      fill="white"/>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -405,7 +436,14 @@
                         </div>
                         <div class="kaufen-mieten-list-box-content-link">
                             <a href="#">
-                                CHF 1’490’000 <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66732 16.959L25.334 16.959" stroke="#333232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0007 7.62549L25.334 16.9588L16.0006 26.2922" stroke="#333232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                CHF 1’490’000
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66732 16.959L25.334 16.959" stroke="#333232" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.0007 7.62549L25.334 16.9588L16.0006 26.2922" stroke="#333232"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -455,7 +493,14 @@
                         </div>
                         <div class="kaufen-mieten-list-box-content-link">
                             <a href="#">
-                                CHF 880’000 <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66732 16.959L25.334 16.959" stroke="#333232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0007 7.62549L25.334 16.9588L16.0006 26.2922" stroke="#333232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                CHF 880’000
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66732 16.959L25.334 16.959" stroke="#333232" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.0007 7.62549L25.334 16.9588L16.0006 26.2922" stroke="#333232"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -505,7 +550,14 @@
                         </div>
                         <div class="kaufen-mieten-list-box-content-link">
                             <a href="#">
-                                CHF 1’890’000 <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66732 16.959L25.334 16.959" stroke="#333232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0007 7.62549L25.334 16.9588L16.0006 26.2922" stroke="#333232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                CHF 1’890’000
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66732 16.959L25.334 16.959" stroke="#333232" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.0007 7.62549L25.334 16.9588L16.0006 26.2922" stroke="#333232"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -555,7 +607,14 @@
                         </div>
                         <div class="kaufen-mieten-list-box-content-link">
                             <a href="#">
-                                CHF 1’050’000 <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66732 16.959L25.334 16.959" stroke="#333232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0007 7.62549L25.334 16.9588L16.0006 26.2922" stroke="#333232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                CHF 1’050’000
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66732 16.959L25.334 16.959" stroke="#333232" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.0007 7.62549L25.334 16.9588L16.0006 26.2922" stroke="#333232"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -630,7 +689,13 @@
                     </div>
                     <div class="form-submit">
                         <button type="submit">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66634 16L25.333 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.9997 6.66602L25.333 15.9993L15.9997 25.3327" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66634 16L25.333 16" stroke="white" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M15.9997 6.66602L25.333 15.9993L15.9997 25.3327" stroke="white"
+                                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </button>
                     </div>
                 </form>
@@ -674,12 +739,27 @@
                     // İstekten dönen veriyi localStorage'a kaydet
                     localStorage.setItem('data', JSON.stringify(data));
                     localStorage.setItem('timestamp', Date.now());
-                    // Veriyi .row içine ekle
-                    addDataToRow(data);
+
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var typeParam = urlParams.get('type');
+
+                    if (!typeParam) {
+                        addDataToRow(data);
+                    } else {
+                        addDataToRow(data, typeParam);
+                    }
                 });
         } else {
-            // localStorage'da veri varsa, veriyi .row içine ekle
-            addDataToRow(JSON.parse(localStorage.getItem('data')));
+
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var typeParam = urlParams.get('type');
+
+            if (!typeParam) {
+                addDataToRow(JSON.parse(localStorage.getItem('data')));
+            } else {
+                addDataToRow(JSON.parse(localStorage.getItem('data')), typeParam);
+            }
         }
     }
 
@@ -688,13 +768,17 @@
         if (speed) {
             speedValue = speed;
         }
-        console.log('addDataToRow', type);
         const row = document.querySelector('.kaufen-mieten-list .row');
 
         if (type === undefined) {
             type = 'SALE';
         }
-        const filteredData = data.filter(item => item.offerType === type).slice(0, 6);
+
+        let filteredData = data.filter(item => item.offerType === type && item.price != null).slice(0, 6);
+
+        if (type === 'Referenzen') {
+            filteredData = data.filter(item => item.price === null).slice(0, 6);
+        }
         filteredData.forEach(item => {
             const newRow = document.createElement('div');
             newRow.classList.add('row');
@@ -765,35 +849,43 @@
 
             const kaufenCol = document.querySelectorAll('.kaufen-col');
 
-            kaufenCol.forEach( function (item, index) {
-                console.log('index', index);
+            kaufenCol.forEach(function (item, index) {
                 if (index === 0 || index === 1) {
                     item.classList.add('kaufen-col-animate');
                 }
             });
 
-            if (speedValue == 'scroll') {
-                kaufenCol.forEach(item => {
-                    window.addEventListener('scroll', function () {
-                        if (isInViewport(item, 5)) {
-                            item.classList.add('kaufen-col-animate');
-                        }
-                    });
-                });
-            } else {
-                kaufenCol.forEach(item => {
+            kaufenCol.forEach(item => {
+                window.addEventListener('scroll', function () {
                     if (isInViewport(item, 5)) {
                         item.classList.add('kaufen-col-animate');
                     }
                 });
-            }
+            });
         });
         hideLoadingSpinner(rows);
     }
 
     getData();
 
+    var urlParams = new URLSearchParams(window.location.search);
+    var typeParam = urlParams.get('type');
+
     const filters = document.querySelectorAll('.kaufen-filter li');
+
+    if (typeParam) {
+        filters.forEach(filter => {
+            filter.classList.remove('selected-filter');
+            const type = filter.getAttribute('data-type');
+            if (type === typeParam) {
+                filter.classList.add('selected-filter');
+            }
+        });
+    }
+
+    if (typeParam === 'Referenzen') {
+        $('.filter-button').hide();
+    }
 
     filters.forEach(filter => {
         filter.addEventListener('click', e => {
@@ -806,17 +898,20 @@
             console.log('type: ', type);
             // localStorage'daki veriyi al
             const data = JSON.parse(localStorage.getItem('data'));
-            console.log('data ', data)
-            // Veriyi offerType değerine göre filtrele
-            const filteredData = data.filter(item => item.offerType === type).slice(0, 6);
-            console.log('filteredData ', filteredData)
+            let filteredData = data.filter(item => item.offerType === type).slice(0, 6);
+            if (type === 'Referenzen') {
+                $('.filter-button').hide();
+                filteredData = data.filter(item => item.price === null).slice(0, 6);
+            } else {
+                $('.filter-button').show();
+                filteredData = data.filter(item => item.offerType === type).slice(0, 6);
+            }
             // Filtrelenen veriyi .row içine ekle
             document.querySelector('.kaufen-mieten-list .row').innerHTML = '';
             showLoadingSpinner(rows);
             addDataToRow(filteredData, type, 'fast');
         });
     });
-
 
 </script>
 
